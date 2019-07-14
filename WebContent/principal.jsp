@@ -54,16 +54,16 @@
 		<div class="center-btn">
 			<ul
 				class="list-group list-unstyled list-group-horizontal justify-content-center">
-				<li><button class="btn btn-danger btn-lg" id="todas">
+				<li><button class="btn btn-danger btn-lg filtro" id="todas">
 						<b>Todas</b>
 					</button></li>
-				<li><button class="btn btn-secondary btn-lg" id="facil">
+				<li><button class="btn btn-outline-secondary btn-lg filtro" id="facil">
 						<b>Fácil</b>
 					</button></li>
-				<li><button class="btn btn-secondary btn-lg" id="medio">
+				<li><button class="btn btn-outline-secondary btn-lg filtro" id="medio">
 						<b>Medio</b>
 					</button></li>
-				<li><button class="btn btn-secondary btn-lg" id="dificil">
+				<li><button class="btn btn-outline-secondary btn-lg filtro" id="dificil">
 						<b>Difícil</b>
 					</button></li>
 			</ul>
@@ -71,19 +71,57 @@
 		<br> <br> <br>
 		<!--  LISTADO DE ROOMS -->
 		<div class="container" style="text-align: inherit; padding: 0">
-			<a href=""><img src="img/room1.jpg" 
-				class="figure-img img-fluid rounded easy"
-				style="height: 300px; width: 340px"></a> <a href=""><img
-				src="img/room2.jpg" class="figure-img img-fluid rounded hard"
-				style="height: 300px; width: 340px"> </a> <a href=""><img
-				src="img/room3.jpg" class="figure-img img-fluid rounded medium"
-				style="height: 300px; width: 340px"> </a> <a href=""><img
-				src="img/room4.jpg" class="figure-img img-fluid rounded medium"
-				style="height: 300px; width: 340px"> </a> <a href=""><img
-				src="img/room5.jpg" class="figure-img img-fluid rounded hard"
-				style="height: 300px; width: 340px"> </a> <a href=""><img
-				src="img/room6.jpg" class="figure-img img-fluid rounded easy"
-				style="height: 300px; width: 340px"> </a>
+			<div class="grid-item easy" id="easy1">
+				<a href=""><img src="img/room1.jpg" class="room rounded"></a>
+				<div class="texto">
+					<p>Laboratorio
+					
+					</p>
+				</div>
+			</div>
+			<div class="grid-item hard" id="hard1">
+				<a href=""><img src="img/room2.jpg" class="room rounded">
+				</a>
+				<div class="texto">
+					<p>Haunted Hospital
+					
+					</p>
+				</div>
+			</div>
+			<div class="grid-item medium" id="medium1">
+				<a href=""><img src="img/room3.jpg" class="room rounded"></a>
+				<div class="texto">
+					<p>El Búnker
+					
+					</p>
+				</div>
+			</div>
+			<div class="grid-item medium" id="medium2">
+				<a href=""><img src="img/room4.jpg" class="room rounded"></a>
+				<div class="texto">
+					<p>El Dr. Nick 
+					
+					</p>
+				</div>
+			</div>
+			<div class="grid-item hard" id="hard2">
+				<a href=""><img src="img/room5.jpg" class="room rounded">
+				</a>
+				<div class="texto">
+					<p>ZEO 101
+					
+					</p>
+				</div>
+			</div>
+			<div class="grid-item easy" id="easy2">
+				<a href=""><img src="img/room6.jpg" class="room rounded">
+				</a>
+				<div class="texto">
+					<p>Almacén soviético
+					
+					</p>
+				</div>
+			</div>
 		</div>
 		<br> <br> <br> <br> <br> <br> <br>
 	</div>
@@ -97,34 +135,50 @@
 		</p>
 	</div>
 	<script type="text/javascript">
-	
-	document.getElementById("todas").addEventListener("click", function () {
-		 document.getElementsByClassName("easy").style = "display: inline";
-		 document.getElementsByClassName("medium").style = "display: inline";
-		 document.getElementsByClassName("hard").style = "display: inline";
-				
-	});
-	
-	document.getElementById("facil").addEventListener("click", function () {
-		 document.getElementsByClassName("easy").style = "display: inline";
-		 document.getElementsByClassName("medium").style = "display: none";
-		 document.getElementsByClassName("hard").style = "display: none";
-				
-	});
-	
-	document.getElementById("medio").addEventListener("click", function () {
-		 document.getElementsByClassName("easy").style = "display: none";
-		 document.getElementsByClassName("medium").style = "display: inline";
-		 document.getElementsByClassName("hard").style = "display: none";
-				
-	});
-	
-	document.getElementById("dificil").addEventListener("click", function () {
-		 document.getElementsByClassName("easy").style = "display: none";
-		 document.getElementsByClassName("medium").style = "display: none";
-		 document.getElementsByClassName("hard").style = "display: inline";
-				
-	});
+		document.getElementById("todas").addEventListener("click", function() {
+			document.getElementById("easy1").style = "display: inline-block";
+			document.getElementById("easy2").style = "display: inline-block";
+			document.getElementById("medium1").style = "display: inline-block";
+			document.getElementById("medium2").style = "display: inline-block";
+			document.getElementById("hard1").style = "display: inline-block";
+			document.getElementById("hard2").style = "display: inline-block";
+
+		});
+
+		document.getElementById("facil").addEventListener("click", function() {
+			document.getElementById("easy1").style = "display: inline-block";
+			document.getElementById("easy2").style = "display: inline-block";
+			document.getElementById("medium1").style = "display: none";
+			document.getElementById("medium2").style = "display: none";
+			document.getElementById("hard1").style = "display: none";
+			document.getElementById("hard2").style = "display: none";
+
+		});
+
+		document.getElementById("medio").addEventListener("click", function() {
+			document.getElementById("easy1").style = "display: none";
+			document.getElementById("easy2").style = "display: none";
+			document.getElementById("medium1").style = "display: inline-block";
+			document.getElementById("medium2").style = "display: inline-block";
+			document.getElementById("hard1").style = "display: none";
+			document.getElementById("hard2").style = "display: none";
+
+		});
+
+		document
+				.getElementById("dificil")
+				.addEventListener(
+						"click",
+						function() {
+							document.getElementById("easy1").style = "display: none";
+							document.getElementById("easy2").style = "display: none";
+							document.getElementById("medium1").style = "display: none";
+							document.getElementById("medium2").style = "display: none";
+							document.getElementById("hard1").style = "display: inline-block";
+							document.getElementById("hard2").style = "display: inline-block";
+
+						});
+		
 		
 	</script>
 

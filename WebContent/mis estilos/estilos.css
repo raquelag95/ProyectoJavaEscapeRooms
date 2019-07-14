@@ -1,5 +1,6 @@
 @charset "ISO-8859-1";
 
+/* CABECERA */
 .my-header {
 	width: 100%;
 	height: 759px;
@@ -28,6 +29,7 @@ a.navbar-brand {
 	letter-spacing: 1px;
 	margin-left: 55px;
 }
+
 .navbar-nav.mr-auto {
 	margin-left: 20px;
 }
@@ -43,10 +45,8 @@ a.nav-link {
 	color: white;
 	font-family: fantasy;
 }
-
+/* CUERPO */
 div .container-fluid-cuerpo {
-	/* 	background: linear-gradient(to bottom, #E4F0C4, #CFD6AB); */
-	/* 	background-color: white; */
 	background-image: url('img/laberinto.jpg');
 }
 
@@ -72,25 +72,47 @@ div .container-fluid-cuerpo {
 	text-align: center;
 	display: inline-block;
 	cursor: pointer;
-	border-radius: 16px;
+	border-radius: 20px;
 	margin-left: 5px;
 	margin-right: 5px;
 }
 
-img.figure-img.img-fluid.rounded {
+.filtro {
+	border-radius: 30px !important;
+	width: 120px;
+}
+
+/* ROOMS */
+.grid-item {
+	height: 300px;
+	width: 340px;
+	display: inline-block;
 	margin-left: 25px;
 	margin-top: 25px;
 	transition: transform .2s;
-}
-
-img.figure-img.img-fluid.rounder: hover img {
-	transform: scale(1.5);
-}
-
-.figure-img {
+	box-shadow: 5px 5px 10px #666;
+	text-align: center;
 	position: relative;
 }
 
+.grid-item:hover {
+	transform: scale(1.1);
+}
+
+.room {
+	height: 300px;
+	width: 340px;
+}
+
+.texto {
+	position: absolute;
+	top: 15px;
+	color: white;
+	left: 50px;
+	top: 220px;
+	font-size: 110%;
+}
+/* FOOTER */
 div.container-fluid-footer {
 	background-image: url('img/pie.jpg');
 	height: 400px;
