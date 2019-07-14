@@ -17,17 +17,16 @@
 	background: rgba(0, 0, 0, 0.3) !important;
 }
 
+img.img-logo {
+	margin-top: 5px;
+}
+
 a.navbar-brand {
 	color: #DC0522 !important;
 	font-size: 200%;
 	font-family: fantasy;
 	letter-spacing: 1px;
 	margin-left: 55px;
-}
-
-img.img-logo {
-	margin-top: 5px !important;
-	
 }
 .navbar-nav.mr-auto {
 	margin-left: 20px;

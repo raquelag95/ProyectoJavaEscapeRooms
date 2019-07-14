@@ -21,8 +21,9 @@
 	<div class="my-header">
 		<nav
 			class="navbar sticky-top navbar-expand-lg navbar-dark bg-secondary">
-			<img class="img-logo" alt="" src="img/logo.png" style="height: 50px; width: 50px">
-			<a class="navbar-brand" href="#">RoomAway</a>
+			<img class="img-logo" alt="" src="img/logo.png"
+				style="height: 50px; width: 50px"> <a class="navbar-brand"
+				href="#">RoomAway</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -53,16 +54,16 @@
 		<div class="center-btn">
 			<ul
 				class="list-group list-unstyled list-group-horizontal justify-content-center">
-				<li><button class="btn btn-danger btn-lg" style="color:">
+				<li><button class="btn btn-danger btn-lg" id="todas">
 						<b>Todas</b>
 					</button></li>
-				<li><button class="btn btn-secondary btn-lg">
+				<li><button class="btn btn-secondary btn-lg" id="facil">
 						<b>Fácil</b>
 					</button></li>
-				<li><button class="btn btn-secondary btn-lg">
+				<li><button class="btn btn-secondary btn-lg" id="medio">
 						<b>Medio</b>
 					</button></li>
-				<li><button class="btn btn-secondary btn-lg">
+				<li><button class="btn btn-secondary btn-lg" id="dificil">
 						<b>Difícil</b>
 					</button></li>
 			</ul>
@@ -71,17 +72,17 @@
 		<!--  LISTADO DE ROOMS -->
 		<div class="container" style="text-align: inherit; padding: 0">
 			<a href=""><img src="img/room1.jpg"
-				class="figure-img img-fluid rounded"
+				class="figure-img img-fluid rounded easy"
 				style="height: 300px; width: 340px"></a> <a href=""><img
-				src="img/room2.jpg" class="figure-img img-fluid rounded"
+				src="img/room2.jpg" class="figure-img img-fluid rounded hard"
 				style="height: 300px; width: 340px"> </a> <a href=""><img
-				src="img/room3.jpg" class="figure-img img-fluid rounded"
+				src="img/room3.jpg" class="figure-img img-fluid rounded medium"
 				style="height: 300px; width: 340px"> </a> <a href=""><img
-				src="img/room4.jpg" class="figure-img img-fluid rounded"
+				src="img/room4.jpg" class="figure-img img-fluid rounded medium"
 				style="height: 300px; width: 340px"> </a> <a href=""><img
-				src="img/room5.jpg" class="figure-img img-fluid rounded"
+				src="img/room5.jpg" class="figure-img img-fluid rounded hard"
 				style="height: 300px; width: 340px"> </a> <a href=""><img
-				src="img/room6.jpg" class="figure-img img-fluid rounded"
+				src="img/room6.jpg" class="figure-img img-fluid rounded easy"
 				style="height: 300px; width: 340px"> </a>
 		</div>
 		<br> <br> <br> <br> <br> <br> <br>
@@ -94,8 +95,38 @@
 			© RoomAway 2019. Todos los derechos reservados <br> Diseño por <a
 				class="desarrolladoras" href="#">Clara y Raquel</a>
 		</p>
-
 	</div>
+	<script type="text/javascript">
+	
+	document.getElementById("todas").addEventListener("click", function () {
+		 document.getElementsByClassName("figure-img img-fluid rounded easy").style = "display: inline";
+		 document.getElementsByClassName("figure-img img-fluid rounded medium").style = "display: inline";
+		 document.getElementsByClassName("figure-img img-fluid rounded hard").style = "display: inline";
+				
+	});
+	
+	document.getElementById("facil").addEventListener("click", function () {
+		 document.getElementsByClassName("figure-img img-fluid rounded easy").style = "display: inline";
+		 document.getElementsByClassName("figure-img img-fluid rounded medium").style = "display: none";
+		 document.getElementsByClassName("figure-img img-fluid rounded hard").style = "display: none";
+				
+	});
+	
+	document.getElementById("medio").addEventListener("click", function () {
+		 document.getElementsByClassName("figure-img img-fluid rounded easy").style = "display: none";
+		 document.getElementsByClassName("figure-img img-fluid rounded medium").style = "display: inline";
+		 document.getElementsByClassName("figure-img img-fluid rounded hard").style = "display: none";
+				
+	});
+	
+	document.getElementById("dificil").addEventListener("click", function () {
+		 document.getElementsByClassName("figure-img img-fluid rounded easy").style = "display: none";
+		 document.getElementsByClassName("figure-img img-fluid rounded medium").style = "display: none";
+		 document.getElementsByClassName("figure-img img-fluid rounded hard").style = "display: inline";
+				
+	});
+		
+	</script>
 
 </body>
 </html>
