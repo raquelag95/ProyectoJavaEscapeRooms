@@ -71,7 +71,7 @@
 		<br> <br> <br>
 		<!--  LISTADO DE ROOMS -->
 		<div class="container" style="text-align: inherit; padding: 0">
-			<a href=""><img src="img/room1.jpg"
+			<a href=""><img src="img/room1.jpg" 
 				class="figure-img img-fluid rounded easy"
 				style="height: 300px; width: 340px"></a> <a href=""><img
 				src="img/room2.jpg" class="figure-img img-fluid rounded hard"
@@ -99,30 +99,30 @@
 	<script type="text/javascript">
 	
 	document.getElementById("todas").addEventListener("click", function () {
-		 document.getElementsByClassName("figure-img img-fluid rounded easy").style = "display: inline";
-		 document.getElementsByClassName("figure-img img-fluid rounded medium").style = "display: inline";
-		 document.getElementsByClassName("figure-img img-fluid rounded hard").style = "display: inline";
+		 document.getElementsByClassName("easy").style = "display: inline";
+		 document.getElementsByClassName("medium").style = "display: inline";
+		 document.getElementsByClassName("hard").style = "display: inline";
 				
 	});
 	
 	document.getElementById("facil").addEventListener("click", function () {
-		 document.getElementsByClassName("figure-img img-fluid rounded easy").style = "display: inline";
-		 document.getElementsByClassName("figure-img img-fluid rounded medium").style = "display: none";
-		 document.getElementsByClassName("figure-img img-fluid rounded hard").style = "display: none";
+		 document.getElementsByClassName("easy").style = "display: inline";
+		 document.getElementsByClassName("medium").style = "display: none";
+		 document.getElementsByClassName("hard").style = "display: none";
 				
 	});
 	
 	document.getElementById("medio").addEventListener("click", function () {
-		 document.getElementsByClassName("figure-img img-fluid rounded easy").style = "display: none";
-		 document.getElementsByClassName("figure-img img-fluid rounded medium").style = "display: inline";
-		 document.getElementsByClassName("figure-img img-fluid rounded hard").style = "display: none";
+		 document.getElementsByClassName("easy").style = "display: none";
+		 document.getElementsByClassName("medium").style = "display: inline";
+		 document.getElementsByClassName("hard").style = "display: none";
 				
 	});
 	
 	document.getElementById("dificil").addEventListener("click", function () {
-		 document.getElementsByClassName("figure-img img-fluid rounded easy").style = "display: none";
-		 document.getElementsByClassName("figure-img img-fluid rounded medium").style = "display: none";
-		 document.getElementsByClassName("figure-img img-fluid rounded hard").style = "display: inline";
+		 document.getElementsByClassName("easy").style = "display: none";
+		 document.getElementsByClassName("medium").style = "display: none";
+		 document.getElementsByClassName("hard").style = "display: inline";
 				
 	});
 		
