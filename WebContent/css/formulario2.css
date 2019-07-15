@@ -1,12 +1,12 @@
 .section {
 	position: relative;
 	height: 100vh;
-	background-image: url('../img/background.jpg');
+	background-image: url('../img/principal.cabecera2.jpg');
 }
 
 .section .section-center {
 	position: absolute;
-	top: 42%;
+	top: 50%;
 	left: 0;
 	right: 0;
 	-webkit-transform: translateY(-50%);
@@ -185,5 +185,9 @@
 }
 
 .form-control.reservar {
-	color: #DC0522 !important;	
+	background-color: #C9302C !important;	
+}
+
+.form-control.cancelar {
+	background-color: gray !important;
 }

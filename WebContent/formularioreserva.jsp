@@ -7,14 +7,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- <link rel="stylesheet" -->
-<!-- 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" -->
-<!-- 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" -->
-<!-- 	crossorigin="anonymous"> -->
-	
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="css/formulario1.css" />
 <link type="text/css" rel="stylesheet" href="css/formulario2.css" />
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 
 <title>Reservar</title>
 </head>
@@ -34,19 +30,19 @@
 <div class="col-md-4">
 <div class="form-group">
 <span class="form-label">Nombre</span>
-<input class="form-control" type="text" placeholder="Introduzca su nombre">
+<input class="form-control" type="text" placeholder="Introduzca su nombre" id="nombre" name="nombre">
 </div>
 </div>
 <div class="col-md-4">
 <div class="form-group">
 <span class="form-label">Primer apellido</span>
-<input class="form-control" type="text" placeholder="Introduzca su primer apellido">
+<input class="form-control" type="text" placeholder="Introduzca su primer apellido" id="apellido1" name="apellido1">
 </div>
 </div>
 <div class="col-md-4">
 <div class="form-group">
 <span class="form-label">Segundo apellido</span>
-<input class="form-control" type="text" placeholder="Introduzca su segundo apellido">
+<input class="form-control" type="text" placeholder="Introduzca su segundo apellido" id="apellido2" name="apellido2">
 </div>
 </div>
 </div>
@@ -54,24 +50,25 @@
 <div class="row">
 <div class="col-md-4">
 <div class="form-group">
-<input class="form-control" type="email" placeholder="Introduzca su email">
+<input class="form-control" type="email" placeholder="Introduzca su email" id="email" name="email">
 <span class="form-label">Email</span>
 </div>
 </div>
 <div class="col-md-4">
 <div class="form-group">
-<input class="form-control" type="tel" placeholder="Introduzca su telefono">
+<input class="form-control" type="tel" placeholder="Introduzca su telefono" id="telefono" name="telefono">
 <span class="form-label">Telefono</span>
 </div>
 </div>
 <div class="col-md-4">
 <div class="form-group">
-<select class="form-control" required>
+<select class="form-control" required id="njug" name="njug">
 <option value="" selected hidden>Numero de jugadores</option>
 <option>2</option>
 <option>3</option>
 <option>4</option>
 <option>5</option>
+<option>6</option>
 </select>
 <span class="select-arrow"></span>
 <span class="form-label">Jugadores</span>
@@ -82,7 +79,7 @@
 <div class="row">
 <div class="col-md-4">
 <div class="form-group">
-<select class="form-control" required>
+<select class="form-control" required id="sala" name="sala">
 <option value="" selected hidden>Sala</option>
 <option>1</option>
 <option>2</option>
@@ -100,7 +97,7 @@
 </div>
 </div>
 </div>
-
+<br>
 <div class="row">
 <div class="col-md-2">
 <div class="form-group">
@@ -110,9 +107,10 @@
 </div>
 <div class="col-md-2">
 <div class="form-group">
-<input class="form-control reservar" type="button" value="Cancelar">
+<input class="form-control cancelar" type="button" value="Cancelar">
 <span class="form-label">Cancelar</span>
 </div>
+<br> <br> <br>
 </div>
 </div>
 
