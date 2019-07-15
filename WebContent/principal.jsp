@@ -16,7 +16,8 @@
 <!-- FAVICON -->
 <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 <!-- ICONOS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body class="full-screen-preview">
 	<!-- CABECERA. BARRA DE NAVEGACION-->
@@ -25,7 +26,7 @@
 			class="navbar sticky-top navbar-expand-lg navbar-dark bg-secondary">
 			<img class="img-logo" alt="" src="img/logo.png"
 				style="height: 50px; width: 50px"> <a class="navbar-brand"
-				href="#">RoomAway</a>			
+				href="#">RoomAway</a>
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active"><a class="nav-link" href="#">Inicio
@@ -53,13 +54,16 @@
 				<li><button class="btn btn-danger btn-lg filtro" id="todas">
 						<b>Todas</b>
 					</button></li>
-				<li><button class="btn btn-outline-secondary btn-lg filtro" id="facil">
+				<li><button class="btn btn-outline-secondary btn-lg filtro"
+						id="facil">
 						<b>Fácil</b>
 					</button></li>
-				<li><button class="btn btn-outline-secondary btn-lg filtro" id="medio">
+				<li><button class="btn btn-outline-secondary btn-lg filtro"
+						id="medio">
 						<b>Medio</b>
 					</button></li>
-				<li><button class="btn btn-outline-secondary btn-lg filtro" id="dificil">
+				<li><button class="btn btn-outline-secondary btn-lg filtro"
+						id="dificil">
 						<b>Difícil</b>
 					</button></li>
 			</ul>
@@ -70,13 +74,13 @@
 			<div class="grid-item easy" id="easy1">
 				<a href=""><img src="img/room1.jpg" class="room rounded"></a>
 				<div class="texto">
-					<p>
-					<span class="glyphicon glyphicon-lock"></span>
-					<span class="glyphicon glyphicon-lock"></span>
-					<span class="glyphicon glyphicon-lock"></span>
-					<span class="glyphicon glyphicon-lock"></span><br>
-					Laboratorio
-					
+					<p class="text" style="text-align: left;">
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span class="glyphicon glyphicon-lock"></span> <span
+							class="glyphicon glyphicon-lock"></span><br> <a href="#" class="rojo">Laboratorio</a>
+
 					</p>
 				</div>
 			</div>
@@ -84,24 +88,38 @@
 				<a href=""><img src="img/room2.jpg" class="room rounded">
 				</a>
 				<div class="texto">
-					<p>Haunted Hospital
-					
+					<p class="text" style="text-align: left;">
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span><br>
+						<a href="#" class="rojo">Haunted Hospital</a>
 					</p>
 				</div>
 			</div>
 			<div class="grid-item medium" id="medium1">
 				<a href=""><img src="img/room3.jpg" class="room rounded"></a>
 				<div class="texto">
-					<p>El Búnker
-					
+					<p class="text" style="text-align: left;">
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span class="glyphicon glyphicon-lock"></span><br> <a href="#" class="rojo">El Búnker</a>
 					</p>
 				</div>
 			</div>
 			<div class="grid-item medium" id="medium2">
 				<a href=""><img src="img/room4.jpg" class="room rounded"></a>
 				<div class="texto">
-					<p>El Dr. Nick 
-					
+					<p class="text" style="text-align: left;">
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span class="glyphicon glyphicon-lock"></span><br> <a href="#" class="rojo">El Dr.
+						Nick</a>
 					</p>
 				</div>
 			</div>
@@ -109,8 +127,13 @@
 				<a href=""><img src="img/room5.jpg" class="room rounded">
 				</a>
 				<div class="texto">
-					<p>ZEO 101
-					
+					<p class="text" style="text-align: left;">
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span><br>
+						<a href="#" class="rojo">ZEO 101</a>
 					</p>
 				</div>
 			</div>
@@ -118,8 +141,13 @@
 				<a href=""><img src="img/room6.jpg" class="room rounded">
 				</a>
 				<div class="texto">
-					<p>Almacén soviético
-					
+					<p class="text" style="text-align: left;">
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span class="glyphicon glyphicon-lock"></span> <span
+							class="glyphicon glyphicon-lock"></span><br> <a href="#" class="rojo">Almacén
+						soviético</a>
 					</p>
 				</div>
 			</div>
@@ -179,8 +207,6 @@
 							document.getElementById("hard2").style = "display: inline-block";
 
 						});
-		
-		
 	</script>
 
 </body>
