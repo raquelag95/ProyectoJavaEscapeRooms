@@ -200,6 +200,8 @@
 
 .form-control.cancelar {
 	background-color: gray !important;
+	text-decoration: none;
+	text-align: center;
 }
 
 .confirmatitulo {

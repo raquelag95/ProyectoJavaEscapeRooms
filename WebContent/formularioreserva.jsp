@@ -25,7 +25,7 @@
 <h1>Realiza tu reserva</h1>
 </div>
 
-<form>
+<form action="ReservarSala" method="post">
 <div class="row">
 <div class="col-md-4">
 <div class="form-group">
@@ -107,8 +107,9 @@
 </div>
 <div class="col-md-2">
 <div class="form-group">
-<input class="form-control cancelar" type="button" value="Cancelar">
-<span class="form-label">Cancelar</span>
+<!-- <input class="form-control cancelar" type="button" value="Cancelar"> -->
+<!-- <span class="form-label">Cancelar</span> -->
+<a href="principal.jsp" class="form-control cancelar">Cancelar</a>
 </div>
 <br> <br> <br>
 </div>
