@@ -108,9 +108,17 @@ div .container-fluid-cuerpo {
 	position: absolute;
 	top: 15px;
 	color: white;
-	left: 50px;
+	left: 30px;
 	top: 220px;
-	font-size: 110%;
+	font-size: 150%;
+	letter-spacing: 1px;
+	font-family: monospace;	
+}
+
+span {
+	height: 10px;
+	width: 5px;
+	
 }
 /* FOOTER */
 div.container-fluid-footer {

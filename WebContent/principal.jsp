@@ -4,17 +4,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>RoomAway: Las mejores reservas en Escape Rooms</title>
+<title>RoomAway: Los mejores Escape Rooms</title>
 
-<!-- LINKS -->
+<!-- BOOTSTRAP TEMPLATES -->
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
-
+<!-- ESTILOS CSS -->
 <link rel="stylesheet" href="mis estilos/estilos.css">
+<!-- FAVICON -->
 <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-
+<!-- ICONOS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body class="full-screen-preview">
 	<!-- CABECERA. BARRA DE NAVEGACION-->
@@ -74,7 +76,12 @@
 			<div class="grid-item easy" id="easy1">
 				<a href=""><img src="img/room1.jpg" class="room rounded"></a>
 				<div class="texto">
-					<p>Laboratorio
+					<p>
+					<span class="glyphicon glyphicon-lock"></span>
+					<span class="glyphicon glyphicon-lock"></span>
+					<span class="glyphicon glyphicon-lock"></span>
+					<span class="glyphicon glyphicon-lock"></span><br>
+					Laboratorio
 					
 					</p>
 				</div>
