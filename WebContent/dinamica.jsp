@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>RoomAway: Los mejores Escape Rooms</title>
+<title>RoomAway: *Laboratorio*</title>
 
 <!-- BOOTSTRAP TEMPLATES -->
 <link rel="stylesheet"
@@ -41,6 +41,7 @@
 				</button>
 			</div>
 		</nav>
+		<h4 class="mensaje"><b>*LABORATORIO*</b></h4>
 		<img alt="" src="img dinamica/room1.expandida.jpg">
 	</div>
 	<!-- 	CUERPO	 -->
@@ -48,15 +49,55 @@
 		style="background-image: url('img/laberinto3.jpg');">
 		<br> <br> <br> <br>
 		<!-- 	DIFICULTAD | TIEMPO | JUGADORES -->
-		<div class="row">
-			<div class="col">
-			
+		<div class="row info">
+			<div class="elemento dificultad">
+				<span class="glyphicon glyphicon-lock"></span> <span
+					class="glyphicon glyphicon-lock"></span> <span
+					class="glyphicon glyphicon-lock"></span> <span
+					class="glyphicon glyphicon-lock"></span> <span
+					class="glyphicon glyphicon-lock"></span>
+				<h4 class="desc elemental">FACIL</h4>
 			</div>
-
+			<div class="elemento jugadores">
+				<div>
+					<span class="glyphicon glyphicon-user"></span> <span
+						class="glyphicon glyphicon-user"></span> <span class="personas">2
+						- 5</span>
+				</div>
+				<h4 class="desc elemental">JUGADORES</h4>
+			</div>
+			<div class="elemento duracion">
+				<span class="glyphicon glyphicon-time"></span> <span class="time">60</span>
+				<h4 class="desc elemental">MINUTOS</h4>
+			</div>
+			<div class="elemento precio">
+				<span class="glyphicon glyphicon-credit-card"></span><span class="prize">60</span>
+				<h4 class="desc elemental">EUR</h4>
+			</div>
 		</div>
 		<br> <br> <br>
 		<!--  DESCRIPCION | RESERVAR -->
-
+		<div class="row descripcion">
+			<div class="col-8">
+				<p class="parrafada">For example, here are two grid layouts that apply to every
+					device and viewport, from xs to xl. Add any number of unit-less
+					classes for each breakpoint you need and every column will be the
+					same width. In a grid layout, content must be placed within columns
+					and only columns may be immediate children of rows. Thanks to
+					flexbox, grid columns without a specified width will automatically
+					layout as equal width columns. For example, four instances of
+					.col-sm will each automatically be 25% wide from the small
+					breakpoint and up. See the auto-layout columns section for more
+					examples. Column classes indicate the number of columns you’d like
+					to use out of the possible 12 per row. So, if you want three
+					equal-width columns across, you can use .col-4. Column widths are
+					set in percentages, so they’re always fluid and sized relative to
+					their parent element.</p>
+			</div>
+			<div class="col">
+				<button class="btn btn-danger reservar2">Reservar sala</button>
+			</div>
+		</div>
 		<br> <br> <br> <br> <br> <br> <br>
 	</div>
 	<!-- 		FOOTER   -->
@@ -68,51 +109,6 @@
 				class="desarrolladoras" href="#">Clara y Raquel</a>
 		</p>
 	</div>
-	<script type="text/javascript">
-		document.getElementById("todas").addEventListener("click", function() {
-			document.getElementById("easy1").style = "display: inline-block";
-			document.getElementById("easy2").style = "display: inline-block";
-			document.getElementById("medium1").style = "display: inline-block";
-			document.getElementById("medium2").style = "display: inline-block";
-			document.getElementById("hard1").style = "display: inline-block";
-			document.getElementById("hard2").style = "display: inline-block";
-
-		});
-
-		document.getElementById("facil").addEventListener("click", function() {
-			document.getElementById("easy1").style = "display: inline-block";
-			document.getElementById("easy2").style = "display: inline-block";
-			document.getElementById("medium1").style = "display: none";
-			document.getElementById("medium2").style = "display: none";
-			document.getElementById("hard1").style = "display: none";
-			document.getElementById("hard2").style = "display: none";
-
-		});
-
-		document.getElementById("medio").addEventListener("click", function() {
-			document.getElementById("easy1").style = "display: none";
-			document.getElementById("easy2").style = "display: none";
-			document.getElementById("medium1").style = "display: inline-block";
-			document.getElementById("medium2").style = "display: inline-block";
-			document.getElementById("hard1").style = "display: none";
-			document.getElementById("hard2").style = "display: none";
-
-		});
-
-		document
-				.getElementById("dificil")
-				.addEventListener(
-						"click",
-						function() {
-							document.getElementById("easy1").style = "display: none";
-							document.getElementById("easy2").style = "display: none";
-							document.getElementById("medium1").style = "display: none";
-							document.getElementById("medium2").style = "display: none";
-							document.getElementById("hard1").style = "display: inline-block";
-							document.getElementById("hard2").style = "display: inline-block";
-
-						});
-	</script>
-
+	
 </body>
 </html>

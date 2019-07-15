@@ -1,4 +1,4 @@
-@charset "ISO-8859-1";
+@charset "UTF-8";
 
 /* CABECERA */
 .my-header {
@@ -118,15 +118,32 @@ div .container-fluid-cuerpo {
 	left: 30px;
 	top: 220px;
 	font-size: 150%;
-	letter-spacing: 1px;
-	font-family: monospace;	
 }
 
-span {
-	height: 10px;
-	width: 5px;
+.text {
+	font-family: monospace;
 	
 }
+
+.glyphicon.glyphicon-lock {
+	margin-right: 1px !important;
+	font-size: 120% !important;
+}
+
+.rojo {
+	text-decoration: none;
+	color: white;
+}
+
+.rojo:hover {
+	color: #C9302C;
+	text-decoration: none;
+}
+
+.rojo:visited {
+	text-decoration: none;
+}
+
 /* FOOTER */
 div.container-fluid-footer {
 	background-image: url('img/pie.jpg');

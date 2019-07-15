@@ -1,6 +1,10 @@
 @charset "ISO-8859-1";
 
 /* CABECERA */
+body {
+	height: 100%;
+	width: 100%;
+}
 .my-header {
 	width: 100%;
 	height: 759px;
@@ -32,6 +36,15 @@ a.navbar-brand {
 	margin-left: 60px;
 }
 
+.mensaje {
+	margin-left: 50px !important;
+	margin-top: 400px !important;
+	text-align: left !important;
+	font-size: 600%;
+	color: white;
+	font-family: fantasy;
+}
+
 /* GRUPO DE BOTONES DE LA BARRA */
 .navbar-nav.mr-auto {
 	margin-left: 5px;
@@ -47,14 +60,11 @@ a.nav-link {
 .mensaje {
 	text-align: center;
 	margin-top: 15%;
-	font-size: 600%;
+	font-size: 500%;
 	color: white;
-	font-family: fantasy;
+	font-family: inherit;
 }
-/***** CUERPO *****/
-div .container-fluid-cuerpo {
-	background-image: url('img/laberinto.jpg');
-}
+
 
 .center-btn {
 	text-align: center;
@@ -84,49 +94,81 @@ div .container-fluid-cuerpo {
 	margin-right: 5px;
 }
 
-.filtro {
-	border-radius: 30px !important;
-	width: 120px;
+
+/***** CUERPO *****/
+
+div .container-fluid-cuerpo {
+	background-image: url('img/laberinto.jpg');	
 }
 
-/* ROOMS */
-.grid-item {
-	height: 300px;
-	width: 340px;
-	display: inline-block;
-	margin-left: 25px;
-	margin-top: 25px;
-	transition: transform .2s;
-	box-shadow: 5px 5px 10px #666;
+.row.info {
+	margin-top: 50px;
+	margin-left: 230px;
+	margin-right: 100px;
+}
+
+.elemento {
+	margin-right: 150px;
 	text-align: center;
-	position: relative;
+/* 	border-right: 1px solid grey; */
 }
 
-.grid-item:hover {
-	transform: scale(1.1);
+.glyphicon.glyphicon-lock {
+	margin-right: 20px;
+	font-size: 140% !important;
 }
 
-.room {
-	height: 300px;
-	width: 340px;
+.glyphicon.glyphicon-user {	
+	margin-right: 4px;
+	font-size: 140% !important;
 }
 
-.texto {
-	position: absolute;
-	top: 15px;
-	color: white;
-	left: 30px;
-	top: 220px;
-	font-size: 150%;
-	letter-spacing: 1px;
-	font-family: monospace;	
+.personas {
+	margin-left: 25px;
+	font-size: 130%;
 }
 
-span {
-	height: 10px;
-	width: 5px;
-	
+.glyphicon.glyphicon-time {	
+	font-size: 160% !important;
 }
+
+.time {
+	margin-left: 25px;
+	font-size: 130%;
+}
+
+.glyphicon.glyphicon-credit-card {	
+	font-size: 160% !important;
+}
+
+.prize {
+	margin-left: 25px;
+	font-size: 130%;
+}
+
+.row.descripcion {
+	margin-left: 210px;
+	text-align: justify;
+	width: 1039px;
+}
+
+.parrafada {
+	font-size: 130%;
+}
+
+.reservar2 {
+	text-decoration: none;
+	font-size: 120% !important;
+	display: inline;
+	margin-left: 60px;
+	margin-top: 70px;
+	height: 100px !important;
+	cursor: pointer;
+	border-radius: 20px !important;
+	height: 40px !important;
+	width: 140px !important;
+}
+
 /* FOOTER */
 div.container-fluid-footer {
 	background-image: url('img/pie.jpg');
