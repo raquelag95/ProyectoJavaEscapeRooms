@@ -37,13 +37,36 @@
 					<li class="nav-item"><a class="nav-link" href="#">Team</a></li>
 
 				</ul>
-				<button class="btn btn-danger reservar" type="submit">
-					<b>Reservar sala</b>
-				</button>
 			</div>
 		</nav>
-		<h3 class="mensaje">¿Te atreves a salir?</h3>
 		<img alt="" src="img/principal.cabecera2.jpg">
+		<div id="booking" class="section">
+		<div class="section-center2">
+		<div class="container">
+		<div class="row">
+		<div class="booking-form">
+		<br>
+		<br>
+		<br>
+		<h1 class="confirmatitulo">¡SU RESERVA SE HA REALIZADO CORRECTAMENTE!</h1>
+		<br>
+		<h3 class="confirmatexto">Le hemos enviado un email de confirmación con los datos de la reserva a "nombreemail"</h3>
+		<br>
+		<h3 class="confirmatexto">Nos vemos en "nombresala", "fechahora".</h3> 
+		<br>
+		<div>
+		<h3 class="confirmatitulo2">¡Hasta pronto!</h3>
+		
+		<img class="img-logo" alt="" src="img/logo.png"
+				style="height: 50px; width: 50px; position:inherit; margin-left: 47%;"> 
+		</div>
+		</div> 
+		</div>
+		</div>
+		</div>
+		</div>
 	</div>
+	
+	
 </body>
 </html>

@@ -13,6 +13,15 @@
 	transform: translateY(-50%);
 }
 
+.section .section-center2 {
+	position: absolute;
+	top: 35%;
+	left: 0;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
 #booking {
 	font-family: 'Raleway', sans-serif;
 }
@@ -28,6 +37,7 @@
 	border-radius: 5px;
 	z-index: 20;
 }
+
 
 .booking-form::before {
 	content: '';
@@ -190,4 +200,29 @@
 
 .form-control.cancelar {
 	background-color: gray !important;
+}
+
+.confirmatitulo {
+	color: white;
+	text-align: center;
+	margin-top: 2%;
+	font-size: 400%;
+	font-family: fantasy;
+}
+
+.confirmatitulo2 {
+	color: #C9302C;
+	text-align: center;
+	margin-top: 2%;
+	font-size: 400%;
+	font-family: fantasy;
+}
+
+.confirmatexto {
+	text-align: center;
+	margin-top: 2%;
+	font-size: 200%;
+	color: silver;
+	font-family: inherit;
+	line-height: 10mm;
 }
