@@ -12,7 +12,7 @@
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
 <!-- ESTILOS CSS -->
-<link rel="stylesheet" href="mis estilos/estilos.css">
+<link rel="stylesheet" href="css/principal.css">
 <!-- FAVICON -->
 <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 <!-- ICONOS -->

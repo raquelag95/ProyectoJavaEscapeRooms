@@ -13,8 +13,8 @@
 <!-- 	crossorigin="anonymous"> -->
 	
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
-<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/formulario1.css" />
+<link type="text/css" rel="stylesheet" href="css/formulario2.css" />
 
 <title>Reservar</title>
 </head>
