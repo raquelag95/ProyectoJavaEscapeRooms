@@ -6,14 +6,16 @@ public class Salas {
 	private int duracion;
 	private int jugMin;
 	private int jugMax;
-	private double precio;
-	private int dificultad;
+	private int precio;
+	private String dificultad;
 	private String descripcion;
 	private String imagen;
+	private int nivelDificultad;
 
 	
-	public Salas(int id, String nombre, int duracion, int jugMin, int jugMax, double precio, int dificultad,
-			String descripcion, String imagen) {
+		
+	public Salas(int id, String nombre, int duracion, int jugMin, int jugMax, int precio, String dificultad,
+			String descripcion, String imagen, int nivelDificultad) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
@@ -24,9 +26,9 @@ public class Salas {
 		this.dificultad = dificultad;
 		this.descripcion = descripcion;
 		this.imagen = imagen;
+		this.nivelDificultad = nivelDificultad;
 	}
 
-	
 	public int getId() {
 		return id;
 	}
@@ -71,16 +73,25 @@ public class Salas {
 		return precio;
 	}
 
-	public void setPrecio(double precio) {
+	public void setPrecio(int precio) {
 		this.precio = precio;
 	}
 
-	public int getDificultad() {
+	
+	public String getDificultad() {
 		return dificultad;
 	}
 
-	public void setDificultad(int dificultad) {
+	public void setDificultad(String dificultad) {
 		this.dificultad = dificultad;
+	}
+
+	public int getNivelDificultad() {
+		return nivelDificultad;
+	}
+
+	public void setNivelDificultad(int nivelDificultad) {
+		this.nivelDificultad = nivelDificultad;
 	}
 
 	public String getDescripcion() {

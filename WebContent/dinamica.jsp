@@ -1,18 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-	<%@ page import="modelo.Modelo" %>
-	<%@ page import="modelo.Salas" %>
-	
-	<%
-			Modelo  modelo = new Modelo();
-		
-			Integer id = (Integer) request.getAttribute("id");
-			Integer id2 = (Integer) request.getAttribute("id2");
-			
-			for(Salas sala : modelo.getListaSalas()) {	
-					if(sala.getId() == id || sala.getId() == id2){		
-		%>
-		
+<%@ page import="modelo.Modelo"%>
+<%@ page import="modelo.Salas"%>
+
+<%
+	Modelo modelo = new Modelo();
+
+	Integer id = (Integer) request.getAttribute("id");
+
+	for (Salas sala : modelo.getListaSalas()) {
+		if (sala.getId() == id) {
+%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,20 +42,23 @@
 				href="#">RoomAway</a>
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active"><a class="nav-link" href="principal.jsp">Inicio
-							<span class="sr-only">(current)</span>
+					<li class="nav-item active"><a class="nav-link"
+						href="principal.jsp">Inicio <span class="sr-only">(current)</span>
 					</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Team</a></li>
 
 				</ul>
-				<button class="btn btn-danger reservar" onclick="window.location.href='formularioreserva.jsp'">
+				<button class="btn btn-danger reservar"
+					onclick="window.location.href='formularioreserva.jsp'">
 					<b>Reservar sala</b>
 				</button>
 			</div>
-		</nav>				
-		
-		<h4 class="mensaje"><b><%=sala.getNombre()%></b></h4>
-		<img alt="" src="img dinamica/room1.expandida.jpg">
+		</nav>
+
+		<h4 class="mensaje">
+			<b><%=sala.getNombre()%></b>
+		</h4>
+		<img alt="" src="img dinamica/<%=sala.getImagen()%>">
 	</div>
 	<!-- 	CUERPO	 -->
 	<div class="container-fluid-cuerpo"
@@ -65,12 +67,18 @@
 		<!-- 	DIFICULTAD | TIEMPO | JUGADORES -->
 		<div class="row info">
 			<div class="elemento dificultad">
-				<span class="glyphicon glyphicon-lock"></span> <span
-					class="glyphicon glyphicon-lock"></span> <span
-					class="glyphicon glyphicon-lock"></span> <span
-					class="glyphicon glyphicon-lock"></span> <span
-					class="glyphicon glyphicon-lock"></span>
-				<h4 class="desc elemental">FACIL</h4>
+				<%
+					int i;
+
+							for (i = 0; i < sala.getNivelDificultad(); i++) {
+				%>
+				<span class="glyphicon glyphicon-lock" style="color: #D81C17" ></span>
+				<%
+					}
+				%>
+				
+
+				<h4 class="desc elemental"><%=sala.getDificultad()%></h4>
 			</div>
 			<div class="elemento jugadores">
 				<div>
@@ -85,7 +93,8 @@
 				<h4 class="desc elemental">MINUTOS</h4>
 			</div>
 			<div class="elemento precio">
-				<span class="glyphicon glyphicon-credit-card"></span><span class="prize">60</span>
+				<span class="glyphicon glyphicon-credit-card"></span><span
+					class="prize"><%=sala.getPrecio()%></span>
 				<h4 class="desc elemental">EUR</h4>
 			</div>
 		</div>
@@ -93,20 +102,7 @@
 		<!--  DESCRIPCION | RESERVAR -->
 		<div class="row descripcion">
 			<div class="col-8">
-				<p class="parrafada">For example, here are two grid layouts that apply to every
-					device and viewport, from xs to xl. Add any number of unit-less
-					classes for each breakpoint you need and every column will be the
-					same width. In a grid layout, content must be placed within columns
-					and only columns may be immediate children of rows. Thanks to
-					flexbox, grid columns without a specified width will automatically
-					layout as equal width columns. For example, four instances of
-					.col-sm will each automatically be 25% wide from the small
-					breakpoint and up. See the auto-layout columns section for more
-					examples. Column classes indicate the number of columns you’d like
-					to use out of the possible 12 per row. So, if you want three
-					equal-width columns across, you can use .col-4. Column widths are
-					set in percentages, so they’re always fluid and sized relative to
-					their parent element.</p>
+				<p class="parrafada"><%=sala.getDescripcion()%></p>
 			</div>
 			<div class="col">
 				<button class="btn btn-danger reservar2">Reservar sala</button>
@@ -124,11 +120,13 @@
 		</p>
 	</div>
 	<%
-					}
-	}
+		}
+		}
 	%>
 	<script type="text/javascript">
-	console.log(<%=id%>);
+		console.log(
+	<%=id%>
+		);
 	</script>
 </body>
 </html>
