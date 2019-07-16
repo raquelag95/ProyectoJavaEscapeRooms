@@ -75,4 +75,24 @@ public class DBConnection {
 		return r;
 	}
 	
+	
+	public ResultSet getSalas() throws SQLException {
+		ResultSet rs = null;
+		String query = "SELECT * FROM rooms.salas";
+		
+		Statement stmt = null;
+		try {
+			conn = getConexion();
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(query);
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return rs;
+	}
+	
+	
 }

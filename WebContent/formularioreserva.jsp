@@ -1,5 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ page import="modelo.Modelo"%>
+    <%@ page import="modelo.Salas"%>
+    <%
+	Modelo modelo = new Modelo();
+	%>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -81,6 +87,13 @@
 <div class="form-group">
 <select class="form-control" required id="sala" name="nSala">
 <option value="" selected hidden>Sala</option>
+<%
+		for (Salas s: modelo.getListaSalas()) {
+			%>
+			<option value="<%=s.getId()%>"><%=s.getNombre()%></option>
+			<%
+		}
+	%>	
 <option>1</option>
 <option>2</option>
 <option>3</option>
@@ -109,7 +122,7 @@
 <div class="form-group">
 <!-- <input class="form-control cancelar" type="button" value="Cancelar"> -->
 <!-- <span class="form-label">Cancelar</span> -->
-<a href="principal.jsp" class="form-control cancelar">Cancelar</a>
+<a href="principal.jsp" class="form-control cancelar" style="padding-top: 19px">Cancelar</a>
 </div>
 <br> <br> <br>
 </div>
