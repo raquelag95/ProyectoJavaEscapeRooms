@@ -7,7 +7,6 @@ import java.util.List;
 
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
-import javax.swing.ImageIcon;
 
 /**
  * Session Bean implementation class Modelo
@@ -16,6 +15,7 @@ import javax.swing.ImageIcon;
 @LocalBean
 public class Modelo {
 	private List<Salas> listaSalas;
+	private List<Reservas> listaReservas;
 	private Reservas reserv;
 	
 	
@@ -32,7 +32,7 @@ public class Modelo {
 			while (rs.next()) {
 				listaSalas.add(new Salas(rs.getInt("id"), rs.getString("nombre"), rs.getInt("duracion"), 
 						rs.getInt("jugMin"), rs.getInt("jugMax"), rs.getDouble("precio"), rs.getInt("dificultad"), 
-						rs.getString("descripcion"), rs.getObject("imagen", ImageIcon.class)));					
+						rs.getString("descripcion"), rs.getString("imagen")));		
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -45,6 +45,34 @@ public class Modelo {
 	public void setListaSalas(List<Salas> listaSalas) {
 		this.listaSalas = listaSalas;
 	}
+
+	
+	
+	
+	public List<Reservas> getListaReservas() {
+		listaReservas = new ArrayList<>();
+		DBConnection conexion = new DBConnection("clara", "Temp3000$$");
+		try {
+			ResultSet rs = conexion.getReservas();
+			while (rs.next()) {
+				
+				listaReservas.add(new Reservas(rs.getInt("id"), rs.getInt("idHorario"), rs.getString("nombre"), 
+						rs.getString("apellido1"), rs.getString("apellido2"), rs.getString("telefono"), rs.getString("correo"), 
+						rs.getInt("nSala"), rs.getInt("nJugadores")));
+					}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return listaReservas;
+	}
+
+
+	public void setListaReservas(List<Reservas> listaReservas) {
+		this.listaReservas = listaReservas;
+	}
+
 
 	public Reservas getReserv() {
 		return reserv;

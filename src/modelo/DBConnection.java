@@ -40,9 +40,26 @@ public class DBConnection {
 		return conn;
 	}
 	
+	
+	public ResultSet getReservas() throws SQLException {
+		ResultSet rs = null;
+		String query = "SELECT * FROM rooms.reservas";
+		
+		Statement stmt = null;
+		try {
+			conn = getConexion();
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(query);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return rs;
+	}
+	
 	public Reservas insertaReserva (Reservas r) throws SQLException {
-		String query = "INSERT INTO `rooms`.`reservas` (`idHorario`, `nombre`, `apellido1`, `apellido2`, "
-				+ "`telefono`, `correo`, `nSala`, `nJugadores`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+		String query = "INSERT INTO `rooms`.`reservas` (`idHorario`, `nombre`, `apellido1`, `apellido2`, `telefono`, `correo`, `nSala`, `nJugadores`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 		PreparedStatement pstmt = null;
 	
 		try {
