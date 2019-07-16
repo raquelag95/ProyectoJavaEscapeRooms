@@ -1,6 +1,5 @@
 package modelo;
 
-
 public class Salas {
 	private int id;
 	private String nombre;
@@ -11,6 +10,7 @@ public class Salas {
 	private int dificultad;
 	private String descripcion;
 	private String imagen;
+
 	
 	public Salas(int id, String nombre, int duracion, int jugMin, int jugMax, double precio, int dificultad,
 			String descripcion, String imagen) {
@@ -25,7 +25,7 @@ public class Salas {
 		this.descripcion = descripcion;
 		this.imagen = imagen;
 	}
-	
+
 	
 	public int getId() {
 		return id;
@@ -101,7 +101,5 @@ public class Salas {
 		this.imagen = imagen;
 	}
 
-	
-	
 	
 }
