@@ -30,13 +30,13 @@
 				href="#">RoomAway</a>
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active"><a class="nav-link" href="#">Inicio
+					<li class="nav-item active"><a class="nav-link" href="principal.jsp">Inicio
 							<span class="sr-only">(current)</span>
 					</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Team</a></li>
 
 				</ul>
-				<button class="btn btn-danger reservar" type="submit">
+				<button class="btn btn-danger reservar" onclick="window.location.href='formularioreserva.jsp'">
 					<b>Reservar sala</b>
 				</button>
 			</div>

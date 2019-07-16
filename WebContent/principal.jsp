@@ -29,13 +29,13 @@
 				href="#">RoomAway</a>
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active"><a class="nav-link" href="#">Inicio
+					<li class="nav-item active"><a class="nav-link" href="principal.jsp">Inicio
 							<span class="sr-only">(current)</span>
 					</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Team</a></li>
 
 				</ul>
-				<button class="btn btn-danger reservar" type="submit">
+				<button class="btn btn-danger reservar" onclick="window.location.href='formularioreserva.jsp'">
 					<b>Reservar sala</b>
 				</button>
 			</div>
@@ -75,9 +75,9 @@
 				<a href=""><img src="img/room1.jpg" class="room rounded"></a>
 				<div class="texto">
 					<p class="text" style="text-align: left;">
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 						<span class="glyphicon glyphicon-lock"></span> <span
 							class="glyphicon glyphicon-lock"></span><br> <a href="#" class="rojo">Laboratorio</a>
 
@@ -89,11 +89,11 @@
 				</a>
 				<div class="texto">
 					<p class="text" style="text-align: left;">
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span><br>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span><br>
 						<a href="#" class="rojo">Haunted Hospital</a>
 					</p>
 				</div>
@@ -102,10 +102,10 @@
 				<a href=""><img src="img/room3.jpg" class="room rounded"></a>
 				<div class="texto">
 					<p class="text" style="text-align: left;">
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 						<span class="glyphicon glyphicon-lock"></span><br> <a href="#" class="rojo">El Búnker</a>
 					</p>
 				</div>
@@ -114,10 +114,10 @@
 				<a href=""><img src="img/room4.jpg" class="room rounded"></a>
 				<div class="texto">
 					<p class="text" style="text-align: left;">
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 						<span class="glyphicon glyphicon-lock"></span><br> <a href="#" class="rojo">El Dr.
 						Nick</a>
 					</p>
@@ -128,11 +128,11 @@
 				</a>
 				<div class="texto">
 					<p class="text" style="text-align: left;">
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span><br>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span><br>
 						<a href="#" class="rojo">ZEO 101</a>
 					</p>
 				</div>
@@ -142,9 +142,9 @@
 				</a>
 				<div class="texto">
 					<p class="text" style="text-align: left;">
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
-						<span style="color: silver" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 						<span class="glyphicon glyphicon-lock"></span> <span
 							class="glyphicon glyphicon-lock"></span><br> <a href="#" class="rojo">Almacén
 						soviético</a>

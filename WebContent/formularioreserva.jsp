@@ -94,9 +94,6 @@
 			<%
 		}
 	%>	
-<option>1</option>
-<option>2</option>
-<option>3</option>
 </select>
 <span class="select-arrow"></span>
 <span class="form-label">Sala</span>
