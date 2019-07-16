@@ -62,7 +62,7 @@
 </div>
 <div class="col-md-4">
 <div class="form-group">
-<select class="form-control" required id="njug" name="njug">
+<select class="form-control" required id="njug" name="nJugadores">
 <option value="" selected hidden>Numero de jugadores</option>
 <option>2</option>
 <option>3</option>
@@ -79,7 +79,7 @@
 <div class="row">
 <div class="col-md-4">
 <div class="form-group">
-<select class="form-control" required id="sala" name="sala">
+<select class="form-control" required id="sala" name="nSala">
 <option value="" selected hidden>Sala</option>
 <option>1</option>
 <option>2</option>

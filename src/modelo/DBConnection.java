@@ -49,7 +49,7 @@ public class DBConnection {
 			conn = getConexion();
 			conn.setAutoCommit(false);
 			pstmt = conn.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
-			pstmt.setInt(1, r.getIdHorario());
+			pstmt.setInt(1, 1);
 			pstmt.setString(2, r.getNombre());
 			pstmt.setString(3, r.getApellido1());
 			pstmt.setString(4, r.getApellido2());

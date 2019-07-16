@@ -43,6 +43,19 @@ public class Reservas {
 
 
 
+	public Reservas(String nombre, String apellido1, String apellido2, String telefono, String correo, int nSala,
+			int nJugadores) {
+		super();
+		this.nombre = nombre;
+		this.apellido1 = apellido1;
+		this.apellido2 = apellido2;
+		this.telefono = telefono;
+		this.correo = correo;
+		this.nSala = nSala;
+		this.nJugadores = nJugadores;
+	}
+
+
 	public int getId() {
 		return id;
 	}
