@@ -1,10 +1,23 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%@ page import="modelo.Modelo" %>
+	<%@ page import="modelo.Salas" %>
+	
+	<%
+			Modelo  modelo = new Modelo();
+		
+			Integer id = (Integer) request.getAttribute("id");
+			Integer id2 = (Integer) request.getAttribute("id2");
+			
+			for(Salas sala : modelo.getListaSalas()) {	
+					if(sala.getId() == id || sala.getId() == id2){		
+		%>
+		
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>RoomAway: *Laboratorio*</title>
+<title>RoomAway:<%=sala.getNombre()%></title>
 
 <!-- BOOTSTRAP TEMPLATES -->
 <link rel="stylesheet"
@@ -40,8 +53,9 @@
 					<b>Reservar sala</b>
 				</button>
 			</div>
-		</nav>
-		<h4 class="mensaje"><b>*LABORATORIO*</b></h4>
+		</nav>				
+		
+		<h4 class="mensaje"><b><%=sala.getNombre()%></b></h4>
 		<img alt="" src="img dinamica/room1.expandida.jpg">
 	</div>
 	<!-- 	CUERPO	 -->
@@ -109,6 +123,12 @@
 				class="desarrolladoras" href="#">Clara y Raquel</a>
 		</p>
 	</div>
-	
+	<%
+					}
+	}
+	%>
+	<script type="text/javascript">
+	console.log(<%=id%>);
+	</script>
 </body>
 </html>

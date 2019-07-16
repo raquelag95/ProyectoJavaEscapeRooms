@@ -17,28 +17,26 @@ import javax.swing.ImageIcon;
 public class Modelo {
 	private List<Salas> listaSalas;
 	private Reservas reserv;
-	
-	
+
 	public Modelo() {
-        // TODO Auto-generated constructor stub
-    }
-	
-	
+		// TODO Auto-generated constructor stub
+	}
+
 	public List<Salas> getListaSalas() {
 		listaSalas = new ArrayList<>();
-    	DBConnection conexion = new DBConnection("clara", "Temp3000$$");
-    	try {
+		DBConnection conexion = new DBConnection("raquel", "Temp3000$$");
+		try {
 			ResultSet rs = conexion.getSalas();
 			while (rs.next()) {
-				listaSalas.add(new Salas(rs.getInt("id"), rs.getString("nombre"), rs.getInt("duracion"), 
-						rs.getInt("jugMin"), rs.getInt("jugMax"), rs.getDouble("precio"), rs.getInt("dificultad"), 
-						rs.getString("descripcion"), rs.getObject("imagen", ImageIcon.class)));					
+				listaSalas.add(new Salas(rs.getInt("id"), rs.getString("nombre"), rs.getInt("duracion"),
+						rs.getInt("jugMin"), rs.getInt("jugMax"), rs.getDouble("precio"), rs.getInt("dificultad"),
+						rs.getString("descripcion"), rs.getString("imagen")));
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		return listaSalas;
 	}
 
@@ -49,10 +47,9 @@ public class Modelo {
 	public Reservas getReserv() {
 		return reserv;
 	}
-	
-	
+
 	public void setReserv(Reservas reserv) {
-		DBConnection dbConnection = new DBConnection("clara", "Temp3000$$");
+		DBConnection dbConnection = new DBConnection("raquel", "Temp3000$$");
 		
 		try {
 			this.reserv = dbConnection.insertaReserva(reserv);
@@ -61,9 +58,6 @@ public class Modelo {
 			e.printStackTrace();
 		}
 	}
-	
-	
-	
-	
 
+	
 }

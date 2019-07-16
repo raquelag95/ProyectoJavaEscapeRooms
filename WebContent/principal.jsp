@@ -29,13 +29,14 @@
 				href="#">RoomAway</a>
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active"><a class="nav-link" href="principal.jsp">Inicio
-							<span class="sr-only">(current)</span>
+					<li class="nav-item active"><a class="nav-link"
+						href="principal.jsp">Inicio <span class="sr-only">(current)</span>
 					</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Team</a></li>
 
 				</ul>
-				<button class="btn btn-danger reservar" onclick="window.location.href='formularioreserva.jsp'">
+				<button class="btn btn-danger reservar"
+					onclick="window.location.href='formularioreserva.jsp'">
 					<b>Reservar sala</b>
 				</button>
 			</div>
@@ -72,84 +73,104 @@
 		<!--  LISTADO DE ROOMS -->
 		<div class="container" style="text-align: inherit; padding: 0">
 			<div class="grid-item easy" id="easy1">
-				<a href=""><img src="img/room1.jpg" class="room rounded"></a>
-				<div class="texto">
-					<p class="text" style="text-align: left;">
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span class="glyphicon glyphicon-lock"></span> <span
-							class="glyphicon glyphicon-lock"></span><br> <a href="#" class="rojo">Laboratorio</a>
+				<form action="MostrarSala1" method="post">
+					<a href=""><img src="img/room1.jpg" class="room rounded pepito"></a>
+					<div class="texto">
+						<p class="text" style="text-align: left;">
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span class="glyphicon glyphicon-lock"></span> <span
+								class="glyphicon glyphicon-lock"></span><br> <input
+								type="submit" class="rojo" value="Laboratorio"
+								style="background-color: transparent; border: none">
 
-					</p>
-				</div>
+						</p>
+					</div>
+				</form>
 			</div>
 			<div class="grid-item hard" id="hard1">
-				<a href=""><img src="img/room2.jpg" class="room rounded">
-				</a>
-				<div class="texto">
-					<p class="text" style="text-align: left;">
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span><br>
-						<a href="#" class="rojo">Haunted Hospital</a>
-					</p>
-				</div>
+				<form action="MostrarSala2" method="post">
+					<a href=""><img src="img/room2.jpg" class="room rounded">
+					</a>
+					<div class="texto">
+						<p class="text" style="text-align: left;">
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span><br>
+							<input type="submit" class="rojo" value="Haunted Hospital"
+								style="background-color: transparent; border: none">
+						</p>
+					</div>
+				</form>
 			</div>
 			<div class="grid-item medium" id="medium1">
-				<a href=""><img src="img/room3.jpg" class="room rounded"></a>
-				<div class="texto">
-					<p class="text" style="text-align: left;">
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span class="glyphicon glyphicon-lock"></span><br> <a href="#" class="rojo">El Búnker</a>
-					</p>
-				</div>
+				<form action="MostrarSala3" method="post">
+					<a href=""><img src="img/room3.jpg" class="room rounded"></a>
+					<div class="texto">
+						<p class="text" style="text-align: left;">
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span class="glyphicon glyphicon-lock"></span><br> <input
+								type="submit" class="rojo" value="El Búnker"
+								style="background-color: transparent; border: none">
+						</p>
+					</div>
+				</form>
 			</div>
 			<div class="grid-item medium" id="medium2">
-				<a href=""><img src="img/room4.jpg" class="room rounded"></a>
-				<div class="texto">
-					<p class="text" style="text-align: left;">
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span class="glyphicon glyphicon-lock"></span><br> <a href="#" class="rojo">El Dr.
-						Nick</a>
-					</p>
-				</div>
+				<form action="MostrarSala4" method="post">
+					<a href=""><img src="img/room4.jpg" class="room rounded"></a>
+					<div class="texto">
+						<p class="text" style="text-align: left;">
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span class="glyphicon glyphicon-lock"></span><br> <input
+								type="submit" class="rojo" value="El Dr. Nick"
+								style="background-color: transparent; border: none">
+						</p>
+					</div>
+				</form>
 			</div>
 			<div class="grid-item hard" id="hard2">
-				<a href=""><img src="img/room5.jpg" class="room rounded">
-				</a>
-				<div class="texto">
-					<p class="text" style="text-align: left;">
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span><br>
-						<a href="#" class="rojo">ZEO 101</a>
-					</p>
-				</div>
+				<form action="MostrarSala5" method="post">
+					<a href=""><img src="img/room5.jpg" class="room rounded">
+					</a>
+					<div class="texto">
+						<p class="text" style="text-align: left;">
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span><br>
+							<input type="submit" class="rojo" value="ZEO 101"
+								style="background-color: transparent; border: none">
+						</p>
+					</div>
+				</form>
 			</div>
 			<div class="grid-item easy" id="easy2">
-				<a href=""><img src="img/room6.jpg" class="room rounded">
-				</a>
-				<div class="texto">
-					<p class="text" style="text-align: left;">
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-						<span class="glyphicon glyphicon-lock"></span> <span
-							class="glyphicon glyphicon-lock"></span><br> <a href="#" class="rojo">Almacén
-						soviético</a>
-					</p>
-				</div>
+				<form action="MostrarSala6" method="post">
+					<a href=""><img src="img/room6.jpg" class="room rounded">
+					</a>
+					<div class="texto">
+						<p class="text" style="text-align: left;">
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+							<span class="glyphicon glyphicon-lock"></span> <span
+								class="glyphicon glyphicon-lock"></span><br> <input
+								type="submit" class="rojo" value="Almacén soviético"
+								style="background-color: transparent; border: none">
+						</p>
+					</div>
+				</form>
 			</div>
 		</div>
 		<br> <br> <br> <br> <br> <br> <br>

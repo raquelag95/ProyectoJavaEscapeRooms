@@ -1,6 +1,5 @@
 package modelo;
 
-import javax.swing.ImageIcon;
 
 public class Salas {
 	private int id;
@@ -11,10 +10,10 @@ public class Salas {
 	private double precio;
 	private int dificultad;
 	private String descripcion;
-	private ImageIcon imagen;
+	private String imagen;
 	
 	public Salas(int id, String nombre, int duracion, int jugMin, int jugMax, double precio, int dificultad,
-			String descripcion, ImageIcon imagen) {
+			String descripcion, String imagen) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
@@ -26,7 +25,8 @@ public class Salas {
 		this.descripcion = descripcion;
 		this.imagen = imagen;
 	}
-
+	
+	
 	public int getId() {
 		return id;
 	}
@@ -91,14 +91,16 @@ public class Salas {
 		this.descripcion = descripcion;
 	}
 
-	public ImageIcon getImagen() {
+
+	public String getImagen() {
 		return imagen;
 	}
 
-	public void setImagen(ImageIcon imagen) {
+
+	public void setImagen(String imagen) {
 		this.imagen = imagen;
 	}
-	
+
 	
 	
 	

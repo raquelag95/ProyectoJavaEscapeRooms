@@ -40,9 +40,10 @@ public class DBConnection {
 		return conn;
 	}
 	
-	public Reservas insertaReserva (Reservas r) throws SQLException {
+	public Reservas insertaReserva(Reservas r) throws SQLException {
 		String query = "INSERT INTO `rooms`.`reservas` (`idHorario`, `nombre`, `apellido1`, `apellido2`, "
 				+ "`telefono`, `correo`, `nSala`, `nJugadores`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+		
 		PreparedStatement pstmt = null;
 	
 		try {
@@ -70,9 +71,10 @@ public class DBConnection {
 			e.printStackTrace();
 		}finally {
 			conn.setAutoCommit(true);
-		}
+		}	
 		
 		return r;
+	
 	}
 	
 	
