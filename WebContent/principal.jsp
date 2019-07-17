@@ -32,7 +32,7 @@
 					<li class="nav-item active"><a class="nav-link"
 						href="principal.jsp">Inicio <span class="sr-only">(current)</span>
 					</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+					<li class="nav-item"><a class="nav-link" href="team.jsp">Team</a></li>
 
 				</ul>
 				<button class="btn btn-danger reservar"
@@ -52,7 +52,8 @@
 		<div class="center-btn">
 			<ul
 				class="list-group list-unstyled list-group-horizontal justify-content-center">
-				<li><button class="btn btn-danger btn-lg filtro" id="todas">
+				<li><button class="btn btn-outline-secondary btn-lg filtro"
+						id="todas" style="background-color: #E95C58">
 						<b>Todas</b>
 					</button></li>
 				<li><button class="btn btn-outline-secondary btn-lg filtro"
@@ -74,7 +75,7 @@
 		<div class="container" style="text-align: inherit; padding: 0">
 			<div class="grid-item easy" id="easy1">
 				<form action="MostrarSala1" method="post">
-					<a href=""><img src="img/room1.jpg" class="room rounded pepito"></a>
+					<img src="img/room1.jpg" class="room rounded pepito">
 					<div class="texto">
 						<p class="text" style="text-align: left;">
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
@@ -91,8 +92,7 @@
 			</div>
 			<div class="grid-item hard" id="hard1">
 				<form action="MostrarSala2" method="post">
-					<a href=""><img src="img/room2.jpg" class="room rounded">
-					</a>
+					<img src="img/room2.jpg" class="room rounded">
 					<div class="texto">
 						<p class="text" style="text-align: left;">
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
@@ -108,7 +108,7 @@
 			</div>
 			<div class="grid-item medium" id="medium1">
 				<form action="MostrarSala3" method="post">
-					<a href=""><img src="img/room3.jpg" class="room rounded"></a>
+					<img src="img/room3.jpg" class="room rounded">
 					<div class="texto">
 						<p class="text" style="text-align: left;">
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
@@ -124,7 +124,7 @@
 			</div>
 			<div class="grid-item medium" id="medium2">
 				<form action="MostrarSala4" method="post">
-					<a href=""><img src="img/room4.jpg" class="room rounded"></a>
+					<img src="img/room4.jpg" class="room rounded">
 					<div class="texto">
 						<p class="text" style="text-align: left;">
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
@@ -140,8 +140,7 @@
 			</div>
 			<div class="grid-item hard" id="hard2">
 				<form action="MostrarSala5" method="post">
-					<a href=""><img src="img/room5.jpg" class="room rounded">
-					</a>
+					<img src="img/room5.jpg" class="room rounded">
 					<div class="texto">
 						<p class="text" style="text-align: left;">
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
@@ -157,8 +156,7 @@
 			</div>
 			<div class="grid-item easy" id="easy2">
 				<form action="MostrarSala6" method="post">
-					<a href=""><img src="img/room6.jpg" class="room rounded">
-					</a>
+					<img src="img/room6.jpg" class="room rounded">
 					<div class="texto">
 						<p class="text" style="text-align: left;">
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
@@ -185,35 +183,59 @@
 		</p>
 	</div>
 	<script type="text/javascript">
-		document.getElementById("todas").addEventListener("click", function() {
-			document.getElementById("easy1").style = "display: inline-block";
-			document.getElementById("easy2").style = "display: inline-block";
-			document.getElementById("medium1").style = "display: inline-block";
-			document.getElementById("medium2").style = "display: inline-block";
-			document.getElementById("hard1").style = "display: inline-block";
-			document.getElementById("hard2").style = "display: inline-block";
+		document
+				.getElementById("todas")
+				.addEventListener(
+						"click",
+						function() {
+							document.getElementById("easy1").style = "display: inline-block";
+							document.getElementById("easy2").style = "display: inline-block";
+							document.getElementById("medium1").style = "display: inline-block";
+							document.getElementById("medium2").style = "display: inline-block";
+							document.getElementById("hard1").style = "display: inline-block";
+							document.getElementById("hard2").style = "display: inline-block";
+							document.getElementById("facil").style = "background-color: none";
+							document.getElementById("medio").style = "background-color: none";
+							document.getElementById("dificil").style = "background-color: none";
+							document.getElementById("todas").style = "background-color: #E95C58; color: black";
 
-		});
+						});
 
-		document.getElementById("facil").addEventListener("click", function() {
-			document.getElementById("easy1").style = "display: inline-block";
-			document.getElementById("easy2").style = "display: inline-block";
-			document.getElementById("medium1").style = "display: none";
-			document.getElementById("medium2").style = "display: none";
-			document.getElementById("hard1").style = "display: none";
-			document.getElementById("hard2").style = "display: none";
+		document
+				.getElementById("facil")
+				.addEventListener(
+						"click",
+						function() {
+							document.getElementById("easy1").style = "display: inline-block";
+							document.getElementById("easy2").style = "display: inline-block";
+							document.getElementById("medium1").style = "display: none";
+							document.getElementById("medium2").style = "display: none";
+							document.getElementById("hard1").style = "display: none";
+							document.getElementById("hard2").style = "display: none";
+							document.getElementById("facil").style = "background-color: #E95C58; color: black";
+							document.getElementById("medio").style = "background-color: none";
+							document.getElementById("dificil").style = "background-color: none";
+							document.getElementById("todas").style = "background-color: none";
 
-		});
+						});
 
-		document.getElementById("medio").addEventListener("click", function() {
-			document.getElementById("easy1").style = "display: none";
-			document.getElementById("easy2").style = "display: none";
-			document.getElementById("medium1").style = "display: inline-block";
-			document.getElementById("medium2").style = "display: inline-block";
-			document.getElementById("hard1").style = "display: none";
-			document.getElementById("hard2").style = "display: none";
+		document
+				.getElementById("medio")
+				.addEventListener(
+						"click",
+						function() {
+							document.getElementById("easy1").style = "display: none";
+							document.getElementById("easy2").style = "display: none";
+							document.getElementById("medium1").style = "display: inline-block";
+							document.getElementById("medium2").style = "display: inline-block";
+							document.getElementById("hard1").style = "display: none";
+							document.getElementById("hard2").style = "display: none";
+							document.getElementById("facil").style = "background-color: none";
+							document.getElementById("medio").style = "background-color: #E95C58; color: black";
+							document.getElementById("dificil").style = "background-color: none";
+							document.getElementById("todas").style = "background-color: none";
 
-		});
+						});
 
 		document
 				.getElementById("dificil")
@@ -226,6 +248,10 @@
 							document.getElementById("medium2").style = "display: none";
 							document.getElementById("hard1").style = "display: inline-block";
 							document.getElementById("hard2").style = "display: inline-block";
+							document.getElementById("facil").style = "background-color: none";
+							document.getElementById("medio").style = "background-color: none";
+							document.getElementById("dificil").style = "background-color:#E95C58; color: black";
+							document.getElementById("todas").style = "background-color: none";
 
 						});
 	</script>

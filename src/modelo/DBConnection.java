@@ -92,6 +92,7 @@ public class DBConnection {
 		
 		return r;
 	
+
 	}
 	
 	public Horario insertaHorario (Horario h) throws SQLException {
@@ -124,6 +125,7 @@ public class DBConnection {
 		return h;
 		
 	}
+
 	
 	public ResultSet getSalas() throws SQLException {
 		ResultSet rs = null;
@@ -142,6 +144,8 @@ public class DBConnection {
 		
 		return rs;
 	}
+	
+	
 	
 	
 }

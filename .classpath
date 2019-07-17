@@ -28,5 +28,6 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/raque/Documents/utiles/gson-2.8.5.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
