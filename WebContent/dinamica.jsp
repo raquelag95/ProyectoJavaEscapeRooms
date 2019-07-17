@@ -7,10 +7,9 @@
 			Modelo  modelo = new Modelo();
 		
 			Integer id = (Integer) request.getAttribute("id");
-			Integer id2 = (Integer) request.getAttribute("id2");
 			
 			for(Salas sala : modelo.getListaSalas()) {	
-					if(sala.getId() == id || sala.getId() == id2){		
+					if(sala.getId() == id) {		
 		%>
 		
 <!DOCTYPE html>
