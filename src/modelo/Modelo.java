@@ -43,8 +43,6 @@ public class Modelo {
 	public void setListaSalas(List<Salas> listaSalas) {
 		this.listaSalas = listaSalas;
 	}
-
-	
 	
 	
 	public List<Reservas> getListaReservas() {
@@ -56,7 +54,7 @@ public class Modelo {
 				
 				listaReservas.add(new Reservas(rs.getInt("id"), rs.getInt("idHorario"), rs.getString("nombre"), 
 						rs.getString("apellido1"), rs.getString("apellido2"), rs.getString("telefono"), rs.getString("correo"), 
-						rs.getInt("nSala"), rs.getInt("nJugadores")));
+						rs.getInt("nJugadores")));
 					}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

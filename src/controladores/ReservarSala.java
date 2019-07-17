@@ -40,13 +40,11 @@ public class ReservarSala extends HttpServlet {
 		// TODO Auto-generated method stub
 //		Reservas r = new Reservas(Integer.parseInt(request.getParameter("idHorario")), request.getParameter("nombre"), 
 //				request.getParameter("apellido1"), request.getParameter("apellido2"), request.getParameter("telefono"), 
-//				request.getParameter("email"), Integer.parseInt(request.getParameter("nSala")), 
-//						Integer.parseInt(request.getParameter("nJugadores")));
+//				request.getParameter("email"), Integer.parseInt(request.getParameter("nJugadores")));
 		
 		Reservas r = new Reservas(request.getParameter("nombre"), 
 				request.getParameter("apellido1"), request.getParameter("apellido2"), request.getParameter("telefono"), 
-				request.getParameter("email"), Integer.parseInt(request.getParameter("nSala")), 
-						Integer.parseInt(request.getParameter("nJugadores")));
+				request.getParameter("email"), Integer.parseInt(request.getParameter("nJugadores")));
 						
 		Modelo modelo = new Modelo();
 		modelo.setReserv(r);

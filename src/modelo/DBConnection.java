@@ -59,7 +59,8 @@ public class DBConnection {
 	}
 	
 	public Reservas insertaReserva (Reservas r) throws SQLException {
-		String query = "INSERT INTO `rooms`.`reservas` (`idHorario`, `nombre`, `apellido1`, `apellido2`, `telefono`, `correo`, `nSala`, `nJugadores`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+		String query = "INSERT INTO `rooms`.`reservas` (`idHorario`, `nombre`, `apellido1`, `apellido2`, `telefono`, `correo`, `nJugadores`) "
+				+ "VALUES (?, ?, ?, ?, ?, ?, ?)";
 		PreparedStatement pstmt = null;
 	
 		try {
@@ -72,8 +73,7 @@ public class DBConnection {
 			pstmt.setString(4, r.getApellido2());
 			pstmt.setString(5, r.getTelefono());
 			pstmt.setString(6, r.getCorreo());
-			pstmt.setInt(7, r.getnSala());
-			pstmt.setInt(8, r.getnJugadores());
+			pstmt.setInt(7, r.getnJugadores());
 			pstmt.executeUpdate();
 			
 			ResultSet rs = pstmt.getGeneratedKeys();

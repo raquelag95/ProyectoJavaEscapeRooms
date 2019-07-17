@@ -8,11 +8,10 @@ public class Reservas {
 	private String apellido2;
 	private String telefono;
 	private String correo;
-	private int nSala;
 	private int nJugadores;
 	
 	public Reservas(int id, int idHorario, String nombre, String apellido1, String apellido2, String telefono,
-			String correo, int nSala, int nJugadores) {
+			String correo, int nJugadores) {
 		super();
 		this.id = id;
 		this.idHorario = idHorario;
@@ -21,13 +20,12 @@ public class Reservas {
 		this.apellido2 = apellido2;
 		this.telefono = telefono;
 		this.correo = correo;
-		this.nSala = nSala;
 		this.nJugadores = nJugadores;
 	}
 
 		
 	public Reservas(int idHorario, String nombre, String apellido1, String apellido2, String telefono, String correo,
-			int nSala, int nJugadores) {
+			int nJugadores) {
 		super();
 		this.idHorario = idHorario;
 		this.nombre = nombre;
@@ -35,15 +33,11 @@ public class Reservas {
 		this.apellido2 = apellido2;
 		this.telefono = telefono;
 		this.correo = correo;
-		this.nSala = nSala;
 		this.nJugadores = nJugadores;
 	}
 
 
-
-
-
-	public Reservas(String nombre, String apellido1, String apellido2, String telefono, String correo, int nSala,
+	public Reservas(String nombre, String apellido1, String apellido2, String telefono, String correo, 
 			int nJugadores) {
 		super();
 		this.nombre = nombre;
@@ -51,7 +45,6 @@ public class Reservas {
 		this.apellido2 = apellido2;
 		this.telefono = telefono;
 		this.correo = correo;
-		this.nSala = nSala;
 		this.nJugadores = nJugadores;
 	}
 
@@ -112,14 +105,7 @@ public class Reservas {
 		this.correo = correo;
 	}
 
-	public int getnSala() {
-		return nSala;
-	}
-
-	public void setnSala(int nSala) {
-		this.nSala = nSala;
-	}
-
+	
 	public int getnJugadores() {
 		return nJugadores;
 	}
