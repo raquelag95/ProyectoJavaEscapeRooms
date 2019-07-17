@@ -91,8 +91,7 @@ public class DBConnection {
 		
 		return r;
 	
-	}
-	
+	}	
 	
 	public ResultSet getSalas() throws SQLException {
 		ResultSet rs = null;
@@ -110,6 +109,13 @@ public class DBConnection {
 		}
 		
 		return rs;
+	}
+	
+	public Horario insertaHorario(Horario h) {
+		
+		String query = "INSERT INTO `rooms`.`horario` (`idSala`, `diaHoraInicio`, `disponibilidad`) VALUES (?, ?, ?)";
+		
+		return h;
 	}
 	
 	
