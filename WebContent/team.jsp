@@ -12,7 +12,7 @@
 	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
 	crossorigin="anonymous">
 <!-- ESTILOS CSS -->
-<link rel="stylesheet" href="css/principal.css">
+<link rel="stylesheet" href="css/team.css">
 <!-- FAVICON -->
 <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 <!-- ICONOS -->
@@ -41,18 +41,24 @@
 			</div>
 		</nav>
 		<h3 class="mensaje">¿NOS CONOCES?</h3>
-		<img alt="" src="img/principal.cabecera2.jpg">
+		<img alt="" src="img/pie.jpg">
+		<div class="row" style="">
+			<div class="col-md-4 columni clara">
+			<img alt="" src="img/clara.jpg" class="claraFoto">
+			</div>
+			<div class="col-md-4 columni raquel">
+			<img alt="" src="img/raquel.JPG" class="raquelFoto">
+			</div>
+		</div>
+
 	</div>
 	<!-- 	CUERPO	 -->
 	<div class="container-fluid-cuerpo"
 		style="background-image: url('img/laberinto3.jpg');">
-		<br> <br> <br> <br>
-		<!-- 	FILTRO DE DIFICULTADES -->
-		
-		<br> <br> <br>
-		<!--  LISTADO DE ROOMS -->
+		<br> <br> <br> <br> <br> <br> <br>
+
 		<div class="container" style="text-align: inherit; padding: 0">
-			
+
 		</div>
 		<br> <br> <br> <br> <br> <br> <br>
 	</div>
@@ -65,6 +71,6 @@
 				class="desarrolladoras" href="#">Clara y Raquel</a>
 		</p>
 	</div>
-	
+
 </body>
 </html>
