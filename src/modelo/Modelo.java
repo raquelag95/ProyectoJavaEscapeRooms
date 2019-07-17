@@ -17,6 +17,7 @@ public class Modelo {
 	private List<Salas> listaSalas;
 	private List<Reservas> listaReservas;
 	private Reservas reserv;
+	private Horario hor;
 
 	public Modelo() {
 		// TODO Auto-generated constructor stub
@@ -81,6 +82,20 @@ public class Modelo {
 		
 		try {
 			this.reserv = dbConnection.insertaReserva(reserv);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public Horario getHor() {
+		return hor;
+	}
+
+	public void setHor(Horario hor) {
+		DBConnection dbConnection = new DBConnection("clara", "Temp3000$$");	
+		try {
+			this.hor = dbConnection.insertaHorario(hor);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

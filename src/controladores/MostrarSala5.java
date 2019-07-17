@@ -34,9 +34,8 @@ public class MostrarSala5 extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Integer id = 5;				
-		request.setAttribute("id", id);
-		
+				
+		request.setAttribute("id", 5);
 		request.getRequestDispatcher("dinamica.jsp").forward(request, response);
 	}
 

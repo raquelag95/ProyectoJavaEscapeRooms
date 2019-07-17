@@ -74,7 +74,6 @@
 <option>3</option>
 <option>4</option>
 <option>5</option>
-<option>6</option>
 </select>
 <span class="select-arrow"></span>
 <span class="form-label">Jugadores</span>
@@ -103,9 +102,29 @@
 <div class="col-md-4">
 <div class="form-group">
 <input class="form-control" type="date" required>
-<span class="form-label">Seleccione fecha y hora</span>
+<span class="form-label" style="color:graytext">Seleccione fecha</span>
 </div>
 </div>
+
+
+<div class="col-md-3">
+<div class="form-group">
+<div class="form-control" style="color: graytext; padding-top:10px; height: 120px; text-align:center"><b>SELECCIONE HORA</b> 
+<p></p>
+<input type="radio" name="hora"> <span style="color: graytext; padding-right: 15px"> 10:00 </span>
+
+<input type="radio" name="hora"> <span style="color: graytext"> 11:00 </span>
+<br>
+<br>
+<input type="radio" name="hora"> <span style="color: graytext; padding-right: 15px"> 12:00 </span>
+
+<input type="radio" name="hora"> <span style="color: graytext"> 13:00 </span>
+</div>
+
+
+</div>
+</div>
+
 </div>
 <br>
 <div class="row">
@@ -121,10 +140,22 @@
 <!-- <span class="form-label">Cancelar</span> -->
 <a href="principal.jsp" class="form-control cancelar" style="padding-top: 19px">Cancelar</a>
 </div>
-<br> <br> <br>
 </div>
 </div>
+</form>
 
+
+<form action="" method="post" id="consultarDisponibilidad">
+<div class="row">
+<div class="col-md-3" style="margin-left: 720px; margin-bottom: 20%; position:absolute">
+<div class="form-group">
+<input class="form-control cancelar" type="submit" value="Consultar disponibilidad">
+<span class="form-label">Disponibilidad</span>
+</div>
+</div>
+</div>
+<br>
+<br>
 </form>
 </div>
 </div>
@@ -132,4 +163,9 @@
 </div>
 </div>
 </body>
+<script>
+	document.getElementById("consultarDisponibilidad").addEventListener("submit", function(e) {
+		
+	});
+</script>
 </html>
