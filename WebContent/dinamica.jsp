@@ -67,16 +67,7 @@
 		<!-- 	DIFICULTAD | TIEMPO | JUGADORES -->
 		<div class="row info">
 			<div class="elemento dificultad">
-				<%
-					int i;
-
-							for (i = 0; i < sala.getNivelDificultad(); i++) {
-				%>
-				<span class="glyphicon glyphicon-lock" style="color: #D81C17" ></span>
-				<%
-					}
-				%>
-				
+						
 
 				<h4 class="desc elemental"><%=sala.getDificultad()%></h4>
 			</div>
@@ -120,13 +111,9 @@
 		</p>
 	</div>
 	<%
-		}
+			}
 		}
 	%>
-	<script type="text/javascript">
-		console.log(
-	<%=id%>
-		);
-	</script>
+	
 </body>
 </html>
