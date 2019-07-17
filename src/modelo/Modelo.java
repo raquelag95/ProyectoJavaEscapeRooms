@@ -49,14 +49,14 @@ public class Modelo {
 	
 	public List<Reservas> getListaReservas() {
 		listaReservas = new ArrayList<>();
-		DBConnection conexion = new DBConnection("raquel", "Temp3000$$");
+		DBConnection conexion = new DBConnection("clara", "Temp3000$$");
 		try {
 			ResultSet rs = conexion.getReservas();
 			while (rs.next()) {
 				
 				listaReservas.add(new Reservas(rs.getInt("id"), rs.getInt("idHorario"), rs.getString("nombre"), 
 						rs.getString("apellido1"), rs.getString("apellido2"), rs.getString("telefono"), rs.getString("correo"), 
-						rs.getInt("nSala"), rs.getInt("nJugadores")));
+						rs.getInt("nJugadores")));
 					}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

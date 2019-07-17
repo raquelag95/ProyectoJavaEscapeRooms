@@ -13,17 +13,17 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/raque/Documents/utiles/javax.ejb.jar">
+	<classpathentry kind="lib" path="C:/Users/Clara/Desktop/Curso Java/Utiles/jstl-1.2.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/raque/Documents/utiles/jstl-1.2.jar">
+	<classpathentry kind="lib" path="C:/Users/Clara/Desktop/Curso Java/Utiles/javax.ejb.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/raque/Documents/utiles/mysql-connector-java-8.0.11.jar">
+	<classpathentry kind="lib" path="C:/Users/Clara/Desktop/Curso Java/Utiles/mysql-connector-java-8.0.16.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>

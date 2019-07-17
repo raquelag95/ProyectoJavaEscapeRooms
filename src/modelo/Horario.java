@@ -6,15 +6,13 @@ public class Horario {
 	private int id;
 	private int idSala;
 	private LocalDateTime diaHoraInicio;
-	private LocalDateTime diaHoraFin;
 	private Boolean disponibilidad;
 	
-	public Horario(int id, int idSala, LocalDateTime diaHoraInicio, LocalDateTime diaHoraFin, Boolean disponibilidad) {
+	public Horario(int id, int idSala, LocalDateTime diaHoraInicio, Boolean disponibilidad) {
 		super();
 		this.id = id;
 		this.idSala = idSala;
 		this.diaHoraInicio = diaHoraInicio;
-		this.diaHoraFin = diaHoraFin;
 		this.disponibilidad = disponibilidad;
 	}
 
@@ -42,14 +40,7 @@ public class Horario {
 		this.diaHoraInicio = diaHoraInicio;
 	}
 
-	public LocalDateTime getDiaHoraFin() {
-		return diaHoraFin;
-	}
-
-	public void setDiaHoraFin(LocalDateTime diaHoraFin) {
-		this.diaHoraFin = diaHoraFin;
-	}
-
+	
 	public Boolean getDisponibilidad() {
 		return disponibilidad;
 	}
