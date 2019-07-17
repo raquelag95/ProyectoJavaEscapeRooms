@@ -43,8 +43,6 @@ public class Modelo {
 	public void setListaSalas(List<Salas> listaSalas) {
 		this.listaSalas = listaSalas;
 	}
-
-	
 	
 	
 	public List<Reservas> getListaReservas() {

@@ -24,7 +24,9 @@ public class Reservas {
 	}
 
 		
-	public Reservas(int idHorario, String nombre, String apellido1, String apellido2, String telefono, String correo, int nJugadores) {
+
+	public Reservas(int idHorario, String nombre, String apellido1, String apellido2, String telefono, String correo,
+			int nJugadores) {
 		super();
 		this.idHorario = idHorario;
 		this.nombre = nombre;
@@ -36,8 +38,8 @@ public class Reservas {
 	}
 
 
-
-	public Reservas(String nombre, String apellido1, String apellido2, String telefono, String correo, int nJugadores) {
+	public Reservas(String nombre, String apellido1, String apellido2, String telefono, String correo, 
+			int nJugadores) {
 		super();
 		this.nombre = nombre;
 		this.apellido1 = apellido1;

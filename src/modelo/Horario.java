@@ -40,7 +40,6 @@ public class Horario {
 		this.diaHoraInicio = diaHoraInicio;
 	}
 
-	
 	public Boolean getDisponibilidad() {
 		return disponibilidad;
 	}

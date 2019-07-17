@@ -59,7 +59,8 @@ public class DBConnection {
 	}
 	
 	public Reservas insertaReserva (Reservas r) throws SQLException {
-		String query = "INSERT INTO `rooms`.`reservas` (`idHorario`, `nombre`, `apellido1`, `apellido2`, `telefono`, `correo`, `nJugadores`) VALUES (?, ?, ?, ?, ?, ?, ?)";
+		String query = "INSERT INTO `rooms`.`reservas` (`idHorario`, `nombre`, `apellido1`, `apellido2`, `telefono`, `correo`, `nJugadores`) "
+				+ "VALUES (?, ?, ?, ?, ?, ?, ?)";
 		PreparedStatement pstmt = null;
 	
 		try {
