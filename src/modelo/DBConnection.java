@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.time.LocalDateTime;
 import java.util.Properties;
 import java.util.TimeZone;
 
@@ -30,7 +31,7 @@ public class DBConnection {
 		infoConexion.put("password", this.password);
 		
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			conn = DriverManager.getConnection(urlConexion, infoConexion);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -93,6 +94,36 @@ public class DBConnection {
 	
 	}
 	
+	public Horario insertaHorario (Horario h) throws SQLException {
+		String query = "INSERT INTO `rooms`.`horario` (`idSala`, `diaHoraInicio`, `disponibilidad` ) VALUES (?, ?, ?)";
+		PreparedStatement pstmt = null;
+		
+		try {
+			conn = getConexion();
+			conn.setAutoCommit(false);
+			pstmt = conn.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
+			pstmt.setInt(1, h.getIdSala());
+			pstmt.setObject(2, h.getDiaHoraInicio());
+			pstmt.setBoolean(3, h.getDisponibilidad());
+			pstmt.executeUpdate();
+			
+			ResultSet rs = pstmt.getGeneratedKeys();
+			if (rs.next()) {
+				h.setId(rs.getInt(1));
+			}
+			conn.commit();
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			conn.setAutoCommit(true);
+		}	
+		
+		
+		return h;
+		
+	}
 	
 	public ResultSet getSalas() throws SQLException {
 		ResultSet rs = null;

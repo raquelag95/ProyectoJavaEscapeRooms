@@ -1,5 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ page import="modelo.Modelo"%>
+    <%@ page import="modelo.Reservas"%>
+    <%
+	Modelo modelo = new Modelo();
+    for (Reservas res : modelo.getListaReservas()) {
+	%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,7 +58,7 @@
 		<br>
 		<h3 class="confirmatexto">Le hemos enviado un email de confirmación con los datos de la reserva a "nombreemail"</h3>
 		<br>
-		<h3 class="confirmatexto">Nos vemos en "nombresala", "fechahora".</h3> 
+		<h3 class="confirmatexto">Nos vemos en <%=res.getIdHorario()%></h3> 
 		<br>
 		<div>
 		<h3 class="confirmatitulo2">¡Hasta pronto!</h3>
@@ -66,7 +72,10 @@
 		</div>
 		</div>
 	</div>
-	
+		<%
+		
+		}
+	%>
 	
 </body>
 </html>

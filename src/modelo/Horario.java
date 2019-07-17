@@ -16,6 +16,10 @@ public class Horario {
 		this.disponibilidad = disponibilidad;
 	}
 
+	public Horario(int id, Integer idSala, LocalDateTime currentDateTime, LocalDateTime plusHours, boolean b) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getId() {
 		return id;
 	}
