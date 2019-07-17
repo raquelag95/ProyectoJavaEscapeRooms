@@ -67,7 +67,21 @@
 		<!-- 	DIFICULTAD | TIEMPO | JUGADORES -->
 		<div class="row info">
 			<div class="elemento dificultad">
-						
+				<%
+					int i = 0;
+
+							for (i = 0; i < sala.getNivelDificultad(); i++) {
+				%>
+				<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
+				<%
+					}
+							int lockSilver = 5 - sala.getNivelDificultad();
+							for (i = 0; i < lockSilver; i++) {
+				%>
+				<span class="glyphicon glyphicon-lock"></span>
+				<%
+					}
+				%>
 
 				<h4 class="desc elemental"><%=sala.getDificultad()%></h4>
 			</div>
@@ -111,9 +125,9 @@
 		</p>
 	</div>
 	<%
-			}
+		}
 		}
 	%>
-	
+
 </body>
 </html>
