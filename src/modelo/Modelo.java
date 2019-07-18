@@ -25,7 +25,7 @@ public class Modelo {
 
 	public List<Salas> getListaSalas() {
 		listaSalas = new ArrayList<>();
-		DBConnection conexion = new DBConnection("clara", "Temp3000$$");
+		DBConnection conexion = new DBConnection("raquel", "Temp3000$$");
 		try {
 			ResultSet rs = conexion.getSalas();
 			while (rs.next()) {
@@ -48,7 +48,7 @@ public class Modelo {
 	
 	public List<Reservas> getListaReservas() {
 		listaReservas = new ArrayList<>();
-		DBConnection conexion = new DBConnection("clara", "Temp3000$$");
+		DBConnection conexion = new DBConnection("raquel", "Temp3000$$");
 		try {
 			ResultSet rs = conexion.getReservas();
 			while (rs.next()) {
@@ -76,7 +76,7 @@ public class Modelo {
 	}
 
 	public void setReserv(Reservas reserv) {
-		DBConnection dbConnection = new DBConnection("clara", "Temp3000$$");
+		DBConnection dbConnection = new DBConnection("raquel", "Temp3000$$");
 		
 		try {
 			this.reserv = dbConnection.insertaReserva(reserv);
@@ -91,7 +91,7 @@ public class Modelo {
 	}
 
 	public void setHor(Horario hor) {
-		DBConnection dbConnection = new DBConnection("clara", "Temp3000$$");	
+		DBConnection dbConnection = new DBConnection("raquel", "Temp3000$$");	
 		try {
 			this.hor = dbConnection.insertaHorario(hor);
 		} catch (SQLException e) {
