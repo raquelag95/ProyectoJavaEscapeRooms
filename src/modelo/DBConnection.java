@@ -6,8 +6,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.time.LocalDateTime;
-import java.util.List;
 import java.util.Properties;
 import java.util.TimeZone;
 
@@ -164,24 +162,22 @@ public class DBConnection {
 	return rs;
 	}
 	
-	public Horario actualizaHorario (Horario h) throws SQLException {
+	
+	public void actualizaHorario(int id) throws SQLException {
 		String query = "UPDATE rooms.horario set disponibilidad = false where id = ?";
-		
 		PreparedStatement pstmt = null;
 		
 		try {
 			conn = getConexion();
-			
 			pstmt = conn.prepareStatement(query);
-			pstmt.setBoolean(1, h.getDisponibilidad());
+			pstmt.setInt(1, id);
 			pstmt.executeUpdate();
-			
+				
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 				
-	}
-		return h;
+		}
 	}
 	
 }

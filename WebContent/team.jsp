@@ -26,7 +26,7 @@
 			class="navbar sticky-top navbar-expand-lg navbar-dark bg-secondary">
 			<img class="img-logo" alt="" src="img/logo.png"
 				style="height: 50px; width: 50px"> <a class="navbar-brand"
-				href="#">RoomAway</a>
+				href="principal.jsp">RoomAway</a>
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active"><a class="nav-link"
@@ -54,7 +54,7 @@
 					<div class="col-md-5 clara" style="text-align: inherit;">
 						<div class="container linkedin"
 							style="height: 100px; width: 100px">
-							<a href="www.linkedin.com/in/clara-sanchez-sobrino"
+							<a href="http://www.linkedin.com/in/clara-sanchez-sobrino"
 								target="blank"> <img title="Abrir linkedin de Clara"
 								src="img/linkedin.png"
 								style="height: 50%; width: auto; position: static;"></a>

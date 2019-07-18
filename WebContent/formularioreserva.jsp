@@ -36,7 +36,7 @@
 			class="navbar sticky-top navbar-expand-lg navbar-dark bg-secondary">
 			<img class="img-logo" alt="" src="img/logo.png"
 				style="height: 50px; width: 50px"> <a class="navbar-brand"
-				href="#">RoomAway</a>
+				href="principal.jsp">RoomAway</a>
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active"><a class="nav-link"
@@ -141,6 +141,7 @@
 								</div>
 
 								<div style="color:red; margin-left:450px; font-weight:bold; display:none"id="error">Seleccione sala y fecha</div>
+								<div style="color:red; margin-left:450px; font-weight:bold; display:none"id="errorFecha">La fecha seleccionada no está disponible</div>
 								
 								<div class="col-md-3" id="horasAll" style="display:none">
 									<div class="form-group">
@@ -229,17 +230,21 @@
 								radioHora.disabled = !horarios[i].disponibilidad;
 							}
 							
+							document.getElementById("error").style="display:none";
 							if (horarios.length > 0) {
 								document.getElementById("horasAll").style="display:inline";
 								document.getElementById("reservar").style="display:inline; margin-left:800px";
-								document.getElementById("error").style="display:none";
+								document.getElementById("errorFecha").style="display:none";
+							} else {
+								document.getElementById("errorFecha").style="display:inline; color:red; margin-left:400px; font-weight:bold";
 							}
+						} else {
+							document.getElementById("error").style="display:inline; color:red; margin-left:450px; font-weight:bold";
 						}
 					};
 
 					document.getElementById("horasAll").style="display:none";
 					document.getElementById("reservar").style="display:none";
-					document.getElementById("error").style="display:inline; color:red; margin-left:450px; font-weight:bold";
 					
 					
 					http.open("POST", "ConsultarDisp", true);

@@ -45,12 +45,9 @@ public class ReservarSala extends HttpServlet {
 	
 		Modelo modelo = new Modelo();
 		modelo.setReserv(r);
-//		crear metodo que busque por id la sala
+		
 		int idReserva = modelo.getReserv().getId();
-		
-		
-//		crear objeto que incluya email
-		request.setAttribute("id", idReserva);
+			request.setAttribute("id", idReserva);
 		request.getRequestDispatcher("confirmacion.jsp").forward(request, response);
 		
 	}
