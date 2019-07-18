@@ -81,33 +81,23 @@ div .container-fluid-cuerpo {
 	margin-right: 5px;
 }
 
-.foto {
-	background-color: blue;
-	height: 100px;
-	width: 50px;
-	text-align: center;
+.correo {
+	transition: transform .1s;
 }
 
-.columni {	
-	text-align: center;
-	
+.correo:hover {	
+	transform: scale(1.1);
 }
 
-.clara {
-	margin-rig: 100px;
-	margin-right: 50p;
+.container.linkedin {
+	transition: transform .1s;
+	height: 100x;
+	width: 100px;
+	margin-left: 420px;
 }
 
-.raquel {
-	margin-left: 50px;
-	margin-right: 100p;
-}
-
-.claraFoto {
-	resize: 50%;
-}
-
-.raquelFoto{
+.container.linkedin:hover {	
+	transform: scale(1.1);
 }
 
 .team {
@@ -136,6 +126,10 @@ p.texto-footer {
 
 a.desarrolladoras {
 	color: #C9302C;
+	text-decoration: none;
+}
+
+a.desarrolladoras:hover {
 	text-decoration: none;
 }
 

@@ -46,7 +46,7 @@
 					<li class="nav-item active"><a class="nav-link"
 						href="principal.jsp">Inicio <span class="sr-only">(current)</span>
 					</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+					<li class="nav-item"><a class="nav-link" href="team.jsp">Team</a></li>
 
 				</ul>
 				<button class="btn btn-danger reservar"
@@ -122,7 +122,7 @@
 		<img class="logo-footer" alt="" src="img/logo.png">
 		<p class="texto-footer">
 			© RoomAway 2019. Todos los derechos reservados <br> Diseño por <a
-				class="desarrolladoras" href="#">Clara y Raquel</a>
+				class="desarrolladoras"  href="team.jsp" title="Ir a 'team'">Clara y Raquel</a>
 		</p>
 	</div>
 	<%

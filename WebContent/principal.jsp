@@ -179,7 +179,7 @@
 		<img class="logo-footer" alt="" src="img/logo.png">
 		<p class="texto-footer">
 			© RoomAway 2019. Todos los derechos reservados <br> Diseño por <a
-				class="desarrolladoras" href="#">Clara y Raquel</a>
+				class="desarrolladoras" href="team.jsp" title="Ir a 'team'">Clara y Raquel</a>
 		</p>
 	</div>
 	<script type="text/javascript">

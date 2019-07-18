@@ -165,6 +165,10 @@ a.desarrolladoras {
 	text-decoration: none;
 }
 
+a.desarrolladoras:hover {
+	text-decoration: none;
+}
+
 img.logo-footer {
 	height: 120px;
 	width: 120px;
