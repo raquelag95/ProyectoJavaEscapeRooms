@@ -2,7 +2,7 @@
     <wb-module deploy-name="Vistas Bootstrap">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
-        <property name="context-root" value="Vistas_Bootstrap"/>
         <property name="java-output-path" value="/Vistas Bootstrap/build/classes"/>
+        <property name="context-root" value="EscapeRooms"/>
     </wb-module>
 </project-modules>
