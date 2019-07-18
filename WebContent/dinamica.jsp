@@ -7,7 +7,7 @@
 <%
 	Modelo modelo = new Modelo();
 
-	Integer id = (Integer) request.getAttribute("id");
+	Integer id = Integer.parseInt(request.getParameter("id"));
 
 	for (Salas sala : modelo.getListaSalas()) {
 		if (sala.getId() == id) {
@@ -40,7 +40,7 @@
 			class="navbar sticky-top navbar-expand-lg navbar-dark bg-secondary">
 			<img class="img-logo" alt="" src="img/logo.png"
 				style="height: 50px; width: 50px"> <a class="navbar-brand"
-				href="#">RoomAway</a>
+				href="principal.jsp">RoomAway</a>
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active"><a class="nav-link"

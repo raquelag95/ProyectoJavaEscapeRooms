@@ -26,7 +26,7 @@
 			class="navbar sticky-top navbar-expand-lg navbar-dark bg-secondary">
 			<img class="img-logo" alt="" src="img/logo.png"
 				style="height: 50px; width: 50px"> <a class="navbar-brand"
-				href="#">RoomAway</a>
+				href="principal.jsp">RoomAway</a>
 			<div class="collapse navbar-collapse">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active"><a class="nav-link"
@@ -73,109 +73,101 @@
 		<br> <br> <br>
 		<!--  LISTADO DE ROOMS -->
 		<div class="container" style="text-align: inherit; padding: 0">
+			<a href="dinamica.jsp?id=1">
 			<div class="grid-item easy" id="easy1">
-				<form action="MostrarSala" method="post">
-					<input type="hidden" name="idSala" value="1" /> <img
-						src="img/room1.jpg" class="room rounded pepito">
+					<input type="hidden" name="idSala" value="1" /> 
+					<img src="img/room1.jpg" class="room rounded pepito">
 					<div class="texto">
-						<p class="text" style="text-align: left;">
+						<div class="text" style="text-align: left;">
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 							<span class="glyphicon glyphicon-lock"></span> <span
-								class="glyphicon glyphicon-lock"></span><br> <input
-								type="submit" class="rojo" value="Laboratorio"
-								style="background-color: transparent; border: none">
-
-						</p>
+								class="glyphicon glyphicon-lock"></span><br> 
+								<p class="rojo" style="background-color: transparent; border: none">Laboratorio</p>
+						</div>
 					</div>
-				</form>
-			</div>
-			<div class="grid-item hard" id="hard1">
-				<form action="MostrarSala" method="post">
-					<input type="hidden" name="idSala" value="2" /> <img
-						src="img/room2.jpg" class="room rounded">
+			</div></a>
+			
+			<a href="dinamica.jsp?id=2">
+				<div class="grid-item hard" id="hard1">
+					<input type="hidden" name="idSala" value="2" /> 
+					<img src="img/room2.jpg" class="room rounded">
 					<div class="texto">
-						<p class="text" style="text-align: left;">
+						<div class="text" style="text-align: left;">
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span><br>
-							<input type="submit" class="rojo" value="Haunted Hospital"
-								style="background-color: transparent; border: none">
-						</p>
+							<p class="rojo" style="background-color: transparent; border: none">Haunted Hospital</p>
+						</div>
 					</div>
-				</form>
-			</div>
+			</div></a>
+			
+			<a href="dinamica.jsp?id=3">
 			<div class="grid-item medium" id="medium1">
-				<form action="MostrarSala" method="post">
-					<input type="hidden" name="idSala" value="3" /> <img
-						src="img/room3.jpg" class="room rounded">
+				<input type="hidden" name="idSala" value="3" /> 
+				<img src="img/room3.jpg" class="room rounded">
 					<div class="texto">
-						<p class="text" style="text-align: left;">
+						<div class="text" style="text-align: left;">
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-							<span class="glyphicon glyphicon-lock"></span><br> <input
-								type="submit" class="rojo" value="El Búnker"
-								style="background-color: transparent; border: none">
-						</p>
+							<span class="glyphicon glyphicon-lock"></span><br> 
+							<p class="rojo" style="background-color: transparent; border: none">El Búnker</p>
+						</div>
 					</div>
-				</form>
-			</div>
+			</div></a>
+			
+			<a href="dinamica.jsp?id=4">
 			<div class="grid-item medium" id="medium2">
-				<form action="MostrarSala" method="post">
-					<input type="hidden" name="idSala" value="4" /> <img
-						src="img/room4.jpg" class="room rounded">
+				<input type="hidden" name="idSala" value="4" /> 
+				<img src="img/room4.jpg" class="room rounded">
 					<div class="texto">
-						<p class="text" style="text-align: left;">
+						<div class="text" style="text-align: left;">
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
-							<span class="glyphicon glyphicon-lock"></span><br> <input
-								type="submit" class="rojo" value="El Dr. Nick"
-								style="background-color: transparent; border: none">
-						</p>
+							<span class="glyphicon glyphicon-lock"></span><br> 
+							<p class="rojo" style="background-color: transparent; border: none">El Dr. Nick</p>
+						</div>
 					</div>
-				</form>
-			</div>
+			</div></a>
+			
+			<a href="dinamica.jsp?id=5">
 			<div class="grid-item hard" id="hard2">
-				<form action="MostrarSala" method="post">
-					<input type="hidden" name="idSala" value="5" /> <img
-						src="img/room5.jpg" class="room rounded">
+				<input type="hidden" name="idSala" value="5" /> 
+				<img src="img/room5.jpg" class="room rounded">
 					<div class="texto">
-						<p class="text" style="text-align: left;">
+						<div class="text" style="text-align: left;">
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span><br>
-							<input type="submit" class="rojo" value="ZEO 101"
-								style="background-color: transparent; border: none">
-						</p>
+							<p class="rojo" style="background-color: transparent; border: none">ZEO 101</p>
+						</div>
 					</div>
-				</form>
-			</div>
+			</div></a>
+			
+			<a href="dinamica.jsp?id=6">
 			<div class="grid-item easy" id="easy2">
-				<form action="MostrarSala" method="post">
-					<input type="hidden" name="idSala" value="6" /> <img
-						src="img/room6.jpg" class="room rounded">
+				<input type="hidden" name="idSala" value="6" /> 
+				<img src="img/room6.jpg" class="room rounded">
 					<div class="texto">
-						<p class="text" style="text-align: left;">
+						<div class="text" style="text-align: left;">
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 							<span style="color: #D81C17" class="glyphicon glyphicon-lock"></span>
 							<span class="glyphicon glyphicon-lock"></span> <span
-								class="glyphicon glyphicon-lock"></span><br> <input
-								type="submit" class="rojo" value="Almacén soviético"
-								style="background-color: transparent; border: none">
-						</p>
+								class="glyphicon glyphicon-lock"></span><br> 
+								<p class="rojo" style="background-color: transparent; border: none">Almacén soviético</p>
+						</div>
 					</div>
-				</form>
-			</div>
+			</div></a>
 		</div>
 		<br> <br> <br> <br> <br> <br> <br>
 	</div>

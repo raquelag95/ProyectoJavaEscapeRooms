@@ -4,7 +4,9 @@
     <%@ page import="modelo.Reservas"%>
     <%
 	Modelo modelo = new Modelo();
+    Integer id = (Integer) request.getAttribute("id");
     for (Reservas res : modelo.getListaReservas()) {
+    	if (res.getId() == id) {
 	%>
 <!DOCTYPE html>
 <html>
@@ -28,7 +30,7 @@
 			class="navbar sticky-top navbar-expand-lg navbar-dark bg-secondary">
 			<img class="img-logo" alt="" src="img/logo.png"
 				style="height: 50px; width: 50px"> <a class="navbar-brand"
-				href="#">RoomAway</a>
+				href="principal.jsp">RoomAway</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -56,9 +58,7 @@
 		<br>
 		<h1 class="confirmatitulo">¡SU RESERVA SE HA REALIZADO CORRECTAMENTE!</h1>
 		<br>
-		<h3 class="confirmatexto">Le hemos enviado un email de confirmación con los datos de la reserva a "nombreemail"</h3>
-		<br>
-		<h3 class="confirmatexto">Nos vemos en <%=res.getIdHorario()%></h3> 
+		<h3 class="confirmatexto">Le hemos enviado un email de confirmación con los datos de la reserva a <%=res.getCorreo()%></h3>
 		<br>
 		<div>
 		<h3 class="confirmatitulo2">¡Hasta pronto!</h3>
@@ -73,7 +73,7 @@
 		</div>
 	</div>
 		<%
-		
+    	}
 		}
 	%>
 	
