@@ -17,7 +17,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>RoomAway:<%=sala.getNombre()%></title>
+<title>RoomAway: <%=sala.getNombre()%></title>
 
 <!-- BOOTSTRAP TEMPLATES -->
 <link rel="stylesheet"
@@ -111,7 +111,7 @@
 				<p class="parrafada"><%=sala.getDescripcion()%></p>
 			</div>
 			<div class="col">
-				<button class="btn btn-danger reservar2">Reservar sala</button>
+				<button class="btn btn-danger reservar2" onclick="window.location.href='formularioreserva.jsp'"> Reservar sala</button>
 			</div>
 		</div>
 		<br> <br> <br> <br> <br> <br> <br>

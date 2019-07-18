@@ -1,7 +1,6 @@
 package controladores;
 
 import java.io.IOException;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -9,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class MostrarSala1
+ * Servlet implementation class MostrarSala
  */
-@WebServlet("/MostrarSala1")
-public class MostrarSala1 extends HttpServlet {
+@WebServlet("/MostrarSala")
+public class MostrarSala extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public MostrarSala1() {
+    public MostrarSala() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -36,9 +35,8 @@ public class MostrarSala1 extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			
-		request.setAttribute("id", 1);
+		request.setAttribute("id", Integer.parseInt(request.getParameter("idSala")));
 		request.getRequestDispatcher("dinamica.jsp").forward(request, response);
-		
 	}
 
 }

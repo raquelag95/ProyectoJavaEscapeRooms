@@ -12,12 +12,17 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,700"
 	rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="css/formulario1.css" />
 <link type="text/css" rel="stylesheet" href="css/formulario2.css" />
 <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
@@ -25,6 +30,26 @@
 </head>
 
 <body>
+<div class="full-screen-preview">
+<div class="my-header">
+		<nav
+			class="navbar sticky-top navbar-expand-lg navbar-dark bg-secondary">
+			<img class="img-logo" alt="" src="img/logo.png"
+				style="height: 50px; width: 50px"> <a class="navbar-brand"
+				href="#">RoomAway</a>
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active"><a class="nav-link"
+						href="principal.jsp">Inicio <span class="sr-only">(current)</span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link" href="team.jsp">Team</a></li>
+
+				</ul>
+			</div>
+		</nav>
+	</div>
+	</div>
+
 	<div id="booking" class="section">
 		<div class="section-center">
 			<div class="container">
@@ -107,31 +132,31 @@
 									</div>
 								</div>
 
-								<<<<<<< HEAD
+					
 								<div class="col-md-4">
 									<div class="form-group">
-										<input class="form-control" type="date" required> <span
-											class="form-label" style="color: graytext">Seleccione
-											fecha</span>
+										<input class="form-control" type="date" required id="fecha"> <span
+											class="form-label">Seleccione fecha</span>
 									</div>
 								</div>
 
-
-								<div class="col-md-3">
+								<div style="color:red; margin-left:450px; font-weight:bold; display:none"id="error">Seleccione sala y fecha</div>
+								
+								<div class="col-md-3" id="horasAll" style="display:none">
 									<div class="form-group">
 										<div class="form-control"
-											style="color: graytext; padding-top: 10px; height: 120px; text-align: center">
+											style="color: #ffa700; padding-top: 10px; height: 120px; text-align: center">
 											<b>SELECCIONE HORA</b>
 											<p></p>
-											<input type="radio" name="hora"> <span
+											<input type="radio" name="idHorario" id="Hora10"> <span
 												style="color: graytext; padding-right: 15px"> 10:00 </span>
 
-											<input type="radio" name="hora"> <span
+											<input type="radio" name="idHorario" id="Hora11"> <span
 												style="color: graytext"> 11:00 </span> <br> <br> <input
-												type="radio" name="hora"> <span
+												type="radio" name="idHorario" id="Hora12"> <span
 												style="color: graytext; padding-right: 15px"> 12:00 </span>
 
-											<input type="radio" name="hora"> <span
+											<input type="radio" name="idHorario" id="Hora13"> <span
 												style="color: graytext"> 13:00 </span>
 										</div>
 
@@ -140,48 +165,48 @@
 								</div>
 
 							</div>
-							<br>
 							<div class="row">
 								<div class="col-md-2">
 									<div class="form-group">
-										<input class="form-control reservar" type="submit"
-											value="Reservar"> <span class="form-label">Reservar</span>
+										<input class="form-control reservar" style="display:none; margin-left:800px; position: absolute" id="reservar" type="submit"
+											value="Reservar"> <span class="form-label">RESERVAR</span>
 									</div>
 								</div>
-								<div class="col-md-2">
-									<div class="form-group">
-										<!-- <input class="form-control cancelar" type="button" value="Cancelar"> -->
-										<!-- <span class="form-label">Cancelar</span> -->
-										<a href="principal.jsp" class="form-control cancelar"
-											style="padding-top: 19px">Cancelar</a>
-									</div>
-								</div>
+								
 							</div>
 						</form>
 
+						<div class="row">
 						<form action="" method="post" id="consultarDisponibilidad">
-							<div class="row">
 								<div class="col-md-3"
-									style="margin-left: 720px; margin-bottom: 20%; position: absolute">
+									style="margin-left: 390px; position: absolute">
 									<div class="form-group">
 										<input class="form-control cancelar" type="submit"
 											value="Consultar disponibilidad"> <span
-											class="form-label">Disponibilidad</span>
+											class="form-label">Disponibilidad </span>
+									</div>
+								</div>
+								</form>
+								
+									<div class="col-md-2">
+									<div class="form-group">
+										<a href="principal.jsp" class="form-control cancelar"
+											style="padding-top: 19px; margin-left: 800px">Cancelar</a>
 									</div>
 								</div>
 							</div>
 							<br> <br>
-						</form>
+						
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<img class="fondo" alt="" src="img/principal.cabecera2.jpg">
+	
 
 	<script type="text/javascript">
-	
-	
-	
+	document.getElementById("consultarDisponibilidad").addEventListener ("click", function(e) {
 					e.preventDefault();
 					e.stopPropagation();
 
@@ -190,21 +215,34 @@
 					objDispon.sala = document.getElementById("sala").value;
 					objDispon.fecha = document.getElementById("fecha").value;
 
-					console.log("soy el objeto normal " + objDispon);
-
 					var objDisponJSON = JSON.stringify(objDispon);
-					console.log("soy el objeso JSON " + objDisponJSON);
-
+	
 					var http = new XMLHttpRequest();
 
 					http.onreadystatechange = function() {
 						if (this.readyState === 4 && this.status === 200) {
-							var arrayRespuesta = JSON.parse(this.responseText);
-							console.log(arrayRespuesta);
+							var horarios = JSON.parse(this.responseText);
+							for (var i=0; i<horarios.length; i++) {
+								var idHora = "Hora" + horarios[i].diaHoraInicio.time.hour;
+								var radioHora = document.getElementById(idHora);
+								radioHora.value = horarios[i].id;
+								radioHora.disabled = !horarios[i].disponibilidad;
+							}
+							
+							if (horarios.length > 0) {
+								document.getElementById("horasAll").style="display:inline";
+								document.getElementById("reservar").style="display:inline; margin-left:800px";
+								document.getElementById("error").style="display:none";
+							}
 						}
 					};
 
-					http.open("POST", "ConsultarDispon", true);
+					document.getElementById("horasAll").style="display:none";
+					document.getElementById("reservar").style="display:none";
+					document.getElementById("error").style="display:inline; color:red; margin-left:450px; font-weight:bold";
+					
+					
+					http.open("POST", "ConsultarDisp", true);
 					http.setRequestHeader("Content-type",
 							"application/x-www-form-urlencoded");
 					http.send("objDisponJSON="+objDisponJSON);

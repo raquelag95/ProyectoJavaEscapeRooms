@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Properties;
 import java.util.TimeZone;
 
@@ -68,7 +69,7 @@ public class DBConnection {
 			conn = getConexion();
 			conn.setAutoCommit(false);
 			pstmt = conn.prepareStatement(query, Statement.RETURN_GENERATED_KEYS);
-			pstmt.setInt(1, 1);
+			pstmt.setInt(1, r.getIdHorario());
 			pstmt.setString(2, r.getNombre());
 			pstmt.setString(3, r.getApellido1());
 			pstmt.setString(4, r.getApellido2());
@@ -145,7 +146,42 @@ public class DBConnection {
 		return rs;
 	}
 	
+	public ResultSet getHorarios(int idSala, String fecha) throws SQLException {
+	ResultSet rs = null;
+	String query = "SELECT * FROM rooms.horario WHERE idSala = ? AND DATE(diaHoraInicio) = ?";
 	
+	PreparedStatement pstmt = null;
 	
+	try {
+		conn = getConexion();
+		pstmt = conn.prepareStatement(query);
+		pstmt.setInt(1, idSala);
+		pstmt.setString(2, fecha);
+		rs = pstmt.executeQuery();
+	} catch (ClassNotFoundException e) {
+		e.printStackTrace();
+	}
+	return rs;
+	}
+	
+	public Horario actualizaHorario (Horario h) throws SQLException {
+		String query = "UPDATE rooms.horario set disponibilidad = false where id = ?";
+		
+		PreparedStatement pstmt = null;
+		
+		try {
+			conn = getConexion();
+			
+			pstmt = conn.prepareStatement(query);
+			pstmt.setBoolean(1, h.getDisponibilidad());
+			pstmt.executeUpdate();
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+				
+	}
+		return h;
+	}
 	
 }

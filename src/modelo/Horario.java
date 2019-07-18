@@ -15,10 +15,18 @@ public class Horario {
 		this.diaHoraInicio = diaHoraInicio;
 		this.disponibilidad = disponibilidad;
 	}
-
-	public Horario(int id, Integer idSala, LocalDateTime currentDateTime, LocalDateTime plusHours, boolean b) {
-		// TODO Auto-generated constructor stub
+	
+		public Horario(int idSala, LocalDateTime diaHoraInicio, Boolean disponibilidad) {
+		super();
+		this.idSala = idSala;
+		this.diaHoraInicio = diaHoraInicio;
+		this.disponibilidad = disponibilidad;
 	}
+
+
+
+
+
 
 	public int getId() {
 		return id;
