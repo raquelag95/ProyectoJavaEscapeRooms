@@ -38,19 +38,20 @@ public class ReservarSala extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-//		Reservas r = new Reservas(Integer.parseInt(request.getParameter("idHorario")), request.getParameter("nombre"), 
-//				request.getParameter("apellido1"), request.getParameter("apellido2"), request.getParameter("telefono"), 
-//				request.getParameter("email"), Integer.parseInt(request.getParameter("nJugadores")));
-		
-		Reservas r = new Reservas(request.getParameter("nombre"), 
+		Reservas r = new Reservas(Integer.parseInt(request.getParameter("idHorario")), request.getParameter("nombre"), 
 				request.getParameter("apellido1"), request.getParameter("apellido2"), request.getParameter("telefono"), 
 				request.getParameter("email"), Integer.parseInt(request.getParameter("nJugadores")));
-						
+		
+	
 		Modelo modelo = new Modelo();
 		modelo.setReserv(r);
-//		int idReserva = modelo.getReserv().getId();
+//		crear metodo que busque por id la sala
+		int idReserva = modelo.getReserv().getId();
 		
-		response.sendRedirect("confirmacion.jsp");
+		
+//		crear objeto que incluya email
+		request.setAttribute("id", idReserva);
+		request.getRequestDispatcher("confirmacion.jsp").forward(request, response);
 		
 	}
 

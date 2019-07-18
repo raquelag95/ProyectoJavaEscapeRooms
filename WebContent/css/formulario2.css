@@ -1,12 +1,12 @@
 .section {
 	position: relative;
 	height: 100vh;
-	background-image: url('../img/principal.cabecera2.jpg');
+	/* 	background-image: url('../img/principal.cabecera2.jpg'); */
 }
 
 .section .section-center {
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 0;
 	right: 0;
 	-webkit-transform: translateY(-50%);
@@ -32,12 +32,11 @@
 	margin: auto;
 	padding: 40px;
 	overflow: hidden;
-/* 	background-image: url('../img/background.jpg'); */
+	/* 	background-image: url('../img/background.jpg'); */
 	background-size: cover;
 	border-radius: 5px;
 	z-index: 20;
 }
-
 
 .booking-form::before {
 	content: '';
@@ -153,7 +152,7 @@
 	top: -10px;
 	left: 25px;
 	opacity: 0;
-	color: #ff0000 !important;
+	color: #ffa700 !important;
 	font-size: 11px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -189,13 +188,12 @@
 	transition: 0.2s all;
 }
 
-.booking-form .submit-btn:hover,
-.booking-form .submit-btn:focus {
+.booking-form .submit-btn:hover, .booking-form .submit-btn:focus {
 	opacity: 0.9;
 }
 
 .form-control.reservar {
-	background-color: #C9302C !important;	
+	background-color: #C9302C !important;
 }
 
 .form-control.cancelar {
@@ -227,4 +225,40 @@
 	color: silver;
 	font-family: inherit;
 	line-height: 10mm;
+}
+
+.fondo {
+	width: 100%;
+	position: absolute;
+	z-index: -22;
+	top: 0;
+}
+
+.my-header nav {
+	/* 	background-color: transparent !important; */
+	background: rgba(0, 0, 0, 0.3) !important;
+	min-height: 90px !important; 
+}
+.img-logo { 
+margin-top : 15px;
+	margin-left: 20px;
+}
+
+a.navbar-brand {
+	color: #C9302C !important;
+	font-size: 300%;
+	font-family: fantasy;
+	letter-spacing: 1px;
+	margin-left: 60px;
+}
+
+.navbar-nav.mr-auto {
+	margin-left: 5px;
+	font-size: 120%;
+}
+
+/* BOTONES INDIVIDUALES DE LA BARRA DE NAVEGACION */
+a.nav-link {
+	color: white !important;
+	margin-right: 15px;
 }

@@ -1,12 +1,10 @@
 package modelo;
 
-import java.time.LocalDate;
-
 public class Disponibilidad {
 	private Integer sala;
-	private LocalDate fecha;
+	private String fecha;
 	
-	public Disponibilidad(Integer sala, LocalDate fecha) {
+	public Disponibilidad(Integer sala, String fecha) {
 		super();
 		this.sala = sala;
 		this.fecha = fecha;
@@ -20,11 +18,11 @@ public class Disponibilidad {
 		this.sala = sala;
 	}
 
-	public LocalDate getFecha() {
+	public String getFecha() {
 		return fecha;
 	}
 
-	public void setFecha(LocalDate fecha) {
+	public void setFecha(String fecha) {
 		this.fecha = fecha;
 	}
 	

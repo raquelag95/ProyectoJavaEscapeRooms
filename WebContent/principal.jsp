@@ -74,7 +74,8 @@
 		<!--  LISTADO DE ROOMS -->
 		<div class="container" style="text-align: inherit; padding: 0">
 			<div class="grid-item easy" id="easy1">
-				<form action="MostrarSala1" method="post">
+				<form action="MostrarSala" method="post">
+				<input type="hidden" name="idSala" value="1"/>
 					<img src="img/room1.jpg" class="room rounded pepito">
 					<div class="texto">
 						<p class="text" style="text-align: left;">
@@ -91,7 +92,8 @@
 				</form>
 			</div>
 			<div class="grid-item hard" id="hard1">
-				<form action="MostrarSala2" method="post">
+				<form action="MostrarSala" method="post">
+				<input type="hidden" name="idSala" value="2"/>
 					<img src="img/room2.jpg" class="room rounded">
 					<div class="texto">
 						<p class="text" style="text-align: left;">
@@ -107,7 +109,8 @@
 				</form>
 			</div>
 			<div class="grid-item medium" id="medium1">
-				<form action="MostrarSala3" method="post">
+				<form action="MostrarSala" method="post">
+				<input type="hidden" name="idSala" value="3"/>
 					<img src="img/room3.jpg" class="room rounded">
 					<div class="texto">
 						<p class="text" style="text-align: left;">
@@ -123,7 +126,8 @@
 				</form>
 			</div>
 			<div class="grid-item medium" id="medium2">
-				<form action="MostrarSala4" method="post">
+				<form action="MostrarSala" method="post">
+				<input type="hidden" name="idSala" value="4"/>
 					<img src="img/room4.jpg" class="room rounded">
 					<div class="texto">
 						<p class="text" style="text-align: left;">
@@ -139,7 +143,8 @@
 				</form>
 			</div>
 			<div class="grid-item hard" id="hard2">
-				<form action="MostrarSala5" method="post">
+				<form action="MostrarSala" method="post">
+				<input type="hidden" name="idSala" value="5"/>
 					<img src="img/room5.jpg" class="room rounded">
 					<div class="texto">
 						<p class="text" style="text-align: left;">
@@ -155,7 +160,8 @@
 				</form>
 			</div>
 			<div class="grid-item easy" id="easy2">
-				<form action="MostrarSala6" method="post">
+				<form action="MostrarSala" method="post">
+				<input type="hidden" name="idSala" value="6"/>
 					<img src="img/room6.jpg" class="room rounded">
 					<div class="texto">
 						<p class="text" style="text-align: left;">
@@ -179,7 +185,7 @@
 		<img class="logo-footer" alt="" src="img/logo.png">
 		<p class="texto-footer">
 			© RoomAway 2019. Todos los derechos reservados <br> Diseño por <a
-				class="desarrolladoras" href="#">Clara y Raquel</a>
+				class="desarrolladoras" href="team.jsp">Clara y Raquel</a>
 		</p>
 	</div>
 	<script type="text/javascript">
