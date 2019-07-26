@@ -42,7 +42,7 @@
 					<li class="nav-item active"><a class="nav-link" href="principal.jsp">Inicio
 							<span class="sr-only">(current)</span>
 					</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+					<li class="nav-item"><a class="nav-link" href="team.jsp">Team</a></li>
 
 				</ul>
 			</div>
